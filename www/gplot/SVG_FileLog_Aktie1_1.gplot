@@ -1,0 +1,20 @@
+# Created by FHEM/98_SVG.pm, 2020-12-17 20:14:25
+set terminal png transparent size <SIZE> crop
+set output '<OUT>.png'
+set xdata time
+set timefmt "%Y-%m-%d_%H:%M:%S"
+set xlabel " "
+set title '<TL>'
+set ytics 
+set y2tics 
+set grid
+set ylabel "Kurs absolut"
+set y2label "Kurs relativ"
+set yrange 90
+set y2range 150
+set yscale log
+set y2scale log
+
+#FileLog_Aktie1 4:Aktie1.Kurs\x3a::
+
+plot "<IN>" using 1:2 axes x1y2 title 'Line 1' ls l2 lw 0.2 with points

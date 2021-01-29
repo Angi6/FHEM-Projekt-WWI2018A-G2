@@ -1,0 +1,475 @@
+attr global userattr cmdIcon devStateIcon devStateIcon:textField-long devStateStyle icon sortby webCmd webCmdLabel:textField-long widgetOverride
+attr global autoload_undefined_devices 1
+attr global autosave 0
+attr global latitude 48.6943
+attr global logfile ./log/fhem-%Y-%m.log
+attr global longitude 9.4687
+attr global modpath .
+attr global motd Messages collected while initializing FHEM:\
+configfile: WEB already defined, delete it first\
+\
+Autosave deactivated
+attr global statefile ./log/fhem.save
+attr global verbose 3
+
+define WEB FHEMWEB 8083 global
+setuuid WEB 5fc4e6b2-f33f-4510-e163-fcb1ad68cbe76d46
+attr WEB JavaScripts JavaScripts codemirror/fhem_codemirror.js
+attr WEB longpoll websocket
+attr WEB stylesheetPrefix f18
+
+# Fake FileLog entry, to access the fhem log from FHEMWEB 
+define Logfile FileLog ./log/fhem-%Y-%m.log fakelog
+setuuid Logfile 5fc4e6b2-f33f-4510-f611-ceafc7ea5e802333
+
+define autocreate autocreate
+setuuid autocreate 5fc4e6b2-f33f-4510-8879-59c433231e2e3cf9
+attr autocreate filelog ./log/%NAME-%Y.log
+
+define eventTypes eventTypes ./log/eventTypes.txt
+setuuid eventTypes 5fc4e6b2-f33f-4510-c11a-e4a337e3b964c68f
+
+# Disable this to avoid looking for new USB devices on startup
+define initialUsbCheck notify global:INITIALIZED usb create
+setuuid initialUsbCheck 5fc4e6b3-f33f-4510-5f42-ac3f6c97caff169f
+
+# define telnetPort telnet 7072 global
+
+# attr WEB HTTPS
+
+define WEBphone FHEMWEB 8084
+setuuid WEBphone 5fc4e6b3-f33f-4510-a7ae-b592067ac552adaa
+attr WEBphone stylesheetPrefix darksmallscreen
+
+# define WEBtablet FHEMWEB 8085 global
+# attr WEBtablet stylesheetPrefix touchpad
+define TABLETUI HTTPSRV ftui/ ./www/tablet/ Tablet-UI
+setuuid TABLETUI 5fc4fcad-f33f-4510-107b-e77eaa7bbbdc9c76
+define myShelly Shelly 192.168.178.101
+setuuid myShelly 5fc7d3c9-f33f-4510-00fc-1a86de47b98f365e
+attr myShelly defchannel 0
+attr myShelly mode relay
+attr myShelly model shelly2.5
+attr myShelly room Gartenbew.
+define rs_shelly Shelly 192.168.178.101
+setuuid rs_shelly 5fdbbd63-f33f-4510-e578-73a1ca2f8c1dede0
+attr rs_shelly defchannel 0
+attr rs_shelly maxtime 15
+attr rs_shelly mode roller
+attr rs_shelly model shelly2.5
+attr rs_shelly room Rolladen
+define rs_sensorHTTP HTTPMOD https://measurements.mobile-alerts.eu/Home/MeasurementDetails?deviceid=03589FAD85A0&vendorid=244DD836-16DE-465E-B265-B3F1596A26D4&appbundle=de.synertronixx.remotemonitor 600\
+
+setuuid rs_sensorHTTP 5fdbbe8b-f33f-4510-b950-8994e7f484aebce0
+attr rs_sensorHTTP userattr reading01Name reading01Regex reading02Name
+attr rs_sensorHTTP icon temp_temperature
+attr rs_sensorHTTP reading01Name temperature
+attr rs_sensorHTTP reading01Regex <td class="timestamp">.*<\/td>[\n\s\S\t]{1,100}<td class="measurement">(.*) C<\/td>
+attr rs_sensorHTTP room Gartenbew.,Rolladen
+attr rs_sensorHTTP showBody 0
+attr rs_sensorHTTP stateFormat Temperatur: temperature °C
+attr rs_sensorHTTP userReadings reading01User {my $v = ReadingsVal('rs_sensorHTTP','temperature','');; $v =~ tr/,/./;; return $v;;}, Durchschnittstemperatur {myAverage("500000", "Temperatur_Log", "4:::")}
+define regensensor_aussen HTTPMOD https://measurements.mobile-alerts.eu/Home/MeasurementDetails?deviceid=0824D9A1B72A&vendorid=244DD836-16DE-465E-B265-B3F1596A26D4&appbundle=de.synertronixx.remotemonitor 20000
+setuuid regensensor_aussen 5fdc8bd7-f33f-4510-76aa-e2b3a7480b66fb0d
+attr regensensor_aussen userattr reading01Name reading01Regex
+attr regensensor_aussen reading01Name rainamount
+attr regensensor_aussen reading01Regex <td class="timestamp">.*<\/td>[\n\s\S\t]{1,50}<td class="measurement">(.*) mm<\/td>
+attr regensensor_aussen room Gartenbew.
+attr regensensor_aussen showBody 0
+attr regensensor_aussen stateFormat Regenmenge: rainamount mm
+attr regensensor_aussen userReadings reading01User {my $v = ReadingsVal('regensensor_aussen','rainamount','');; $v =~ tr/,/./;; return $v;;}, SummierteRegenmenge1 {calculateRainDifference("600000","Regenmenge_Log", "4:::")}, SummierteRegenmenge2 {calculateRainDifference("600000","Regenmenge_Log","4:::")}
+define nanoCUL433 CUL /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0@38400 0000
+setuuid nanoCUL433 5fdd22df-f33f-4510-093f-f6c33ee627ae9fad
+attr nanoCUL433 room Weihnachtsbel
+define Funksteckdose IT 0FFFF0FF0F FF F0
+setuuid Funksteckdose 5fdd26f1-f33f-4510-f570-0b28a3f2ee2ccd8a
+attr Funksteckdose IODev nanoCUL433
+attr Funksteckdose devStateIcon on:li_wht_on off:li_wht_off
+attr Funksteckdose model itswitch
+attr Funksteckdose room Weihnachtsbel
+define windsensor_aussen HTTPMOD https://measurements.mobile-alerts.eu/Home/MeasurementDetails?deviceid=0B1D2300E734&vendorid=244DD836-16DE-465E-B265-B3F1596A26D4&appbundle=de.synertronixx.remotemonitor 300
+setuuid windsensor_aussen 5fdf52c9-f33f-4510-87a7-0b7198d617beb453
+attr windsensor_aussen userattr reading01Name reading01Regex reading02Name reading02Regex
+attr windsensor_aussen reading01Name windspeed
+attr windsensor_aussen reading01Regex <td class="timestamp">.*<\/td>[\n\s\S\t]{1,50}<td class="measurement">(.*) km\/h<\/td>
+attr windsensor_aussen reading02Name gust
+attr windsensor_aussen reading02Regex <td class="timestamp">.*<\/td>[\n\s\S\t]{1,100}<td class="measurement">(.*) km\/h<\/td>
+attr windsensor_aussen room Gartenbew.
+attr windsensor_aussen showBody 1
+attr windsensor_aussen stateFormat Windgeschwindigkeit: windspeed km/h\
+Windböe: gust km/h
+define Aktie3 HTTPMOD https://www.onvista.de/suche/865985 600
+setuuid Aktie3 5fea06e1-f33f-4510-9e79-014206ba46180ab8
+define Temperatur_Log FileLog ./log/Temperatur-%Y-%m.log rs_sensorHTTP
+setuuid Temperatur_Log 5feb14c9-f33f-4510-f61b-7c5da54c44f1908f
+attr Temperatur_Log ignoreRegexp .*reread.*|.*Durchschnittstemperatur.*|.*temperature: .*
+attr Temperatur_Log room Gartenbew.
+define telebot TelegramBot
+setuuid telebot 5feb5f3c-f33f-4510-b899-b3d4d662a52b0604
+attr telebot defaultPeer -454495550
+attr telebot icon robot
+attr telebot room Aktien,Gartenbew.,Rolladen
+define test dummy
+setuuid test 5fec55c8-f33f-4510-2195-195305816f81e281
+define 123456 dummy
+setuuid 123456 5fec56fd-f33f-4510-d640-9f16445b104509c0
+define 23456 HTTPMOD https://www.finanzen.net/suchergebnis.asp?_search=23456 600
+setuuid 23456 5fec57eb-f33f-4510-9ab8-464920707ed887f1
+attr 23456 showBody 1
+define CUL_HOERMANN_BD14D00F00 CUL_HOERMANN BD14D00F00
+setuuid CUL_HOERMANN_BD14D00F00 5fec8e9b-f33f-4510-b793-c20e569b43dd16ca
+attr CUL_HOERMANN_BD14D00F00 IODev nanoCUL433
+attr CUL_HOERMANN_BD14D00F00 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_BD14D00F00 FileLog ./log/CUL_HOERMANN_BD14D00F00-%Y.log CUL_HOERMANN_BD14D00F00
+setuuid FileLog_CUL_HOERMANN_BD14D00F00 5fec8e9b-f33f-4510-17ed-be3a703232e8dfcb
+attr FileLog_CUL_HOERMANN_BD14D00F00 logtype text
+attr FileLog_CUL_HOERMANN_BD14D00F00 room CUL_HOERMANN
+define CUL_HOERMANN_FD210303A0 CUL_HOERMANN FD210303A0
+setuuid CUL_HOERMANN_FD210303A0 5fecac00-f33f-4510-2e29-fe33e351d932ccf8
+attr CUL_HOERMANN_FD210303A0 IODev nanoCUL433
+attr CUL_HOERMANN_FD210303A0 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_FD210303A0 FileLog ./log/CUL_HOERMANN_FD210303A0-%Y.log CUL_HOERMANN_FD210303A0
+setuuid FileLog_CUL_HOERMANN_FD210303A0 5fecac00-f33f-4510-6818-969487cd1f718241
+attr FileLog_CUL_HOERMANN_FD210303A0 logtype text
+attr FileLog_CUL_HOERMANN_FD210303A0 room CUL_HOERMANN
+define CUL_HOERMANN_3107028000 CUL_HOERMANN 3107028000
+setuuid CUL_HOERMANN_3107028000 5fee1d71-f33f-4510-94cb-5219d458faf8f631
+attr CUL_HOERMANN_3107028000 IODev nanoCUL433
+attr CUL_HOERMANN_3107028000 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_3107028000 FileLog ./log/CUL_HOERMANN_3107028000-%Y.log CUL_HOERMANN_3107028000
+setuuid FileLog_CUL_HOERMANN_3107028000 5fee1d71-f33f-4510-4d19-3af4b3ccb9ca5882
+attr FileLog_CUL_HOERMANN_3107028000 logtype text
+attr FileLog_CUL_HOERMANN_3107028000 room CUL_HOERMANN
+define CUL_HOERMANN_703C0010E0 CUL_HOERMANN 703C0010E0
+setuuid CUL_HOERMANN_703C0010E0 5fefa7cd-f33f-4510-6f96-739f5576502a2aba
+attr CUL_HOERMANN_703C0010E0 IODev nanoCUL433
+attr CUL_HOERMANN_703C0010E0 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_703C0010E0 FileLog ./log/CUL_HOERMANN_703C0010E0-%Y.log CUL_HOERMANN_703C0010E0
+setuuid FileLog_CUL_HOERMANN_703C0010E0 5fefa7cd-f33f-4510-9f5e-3b957b11ee3ce1a6
+attr FileLog_CUL_HOERMANN_703C0010E0 logtype text
+attr FileLog_CUL_HOERMANN_703C0010E0 room CUL_HOERMANN
+define Regenmenge_Log FileLog ./log/Regenmenge-%Y-%m.log regensensor_aussen
+setuuid Regenmenge_Log 5ff05bd3-f33f-4510-7400-32bde326acaf1d4f
+attr Regenmenge_Log room Gartenbew.
+define rollerTimer DOIF ##1 - Schaltzeiten werden geschaltet, wenn T_Aktiv auf "on" ist\
+([?$SELF:T_Aktiv, "off"] eq "on"\
+and ([[$SELF:T_WochentagM]|12345]\
+or 	[[$SELF:T_WochenendeM]|60]))\
+(\
+	set telebot msg @@Pinte11 TimerMorgens;;\
+)\
+DOELSEIF ([?$SELF:T_Aktiv, "off"] eq "on"\
+and ([[$SELF:T_WochentagA]|12345]\
+or 	[[$SELF:T_WochenendeA]|60]))\
+(\
+	set telebot msg @@Pinte11 TimerAbends;;\
+)\
+##2 - Resetfunktion setzt Uhrzeiten auf Defaultwerte\
+DOELSEIF (["$SELF:T_Reset: on"])\
+( 	set $SELF T_WochentagM 06:00;;\
+	set $SELF T_WochenendeM 06:00;;\
+	set $SELF T_WochentagA 20:00;;\
+	set $SELF T_WochenendeA 20:00;;\
+)
+setuuid rollerTimer 5ff0c9ab-f33f-4510-e7f4-58e90abdfc57bd81
+attr rollerTimer do always
+attr rollerTimer icon clock
+attr rollerTimer notexist "8:00"
+attr rollerTimer readingList T_Aktiv T_Reset T_WochentagM T_WochenendeM T_WochentagA T_WochenendeA
+attr rollerTimer room Rolladen
+attr rollerTimer selftrigger all
+attr rollerTimer setList T_Aktiv:on,off T_Reset:on T_WochentagM:time T_WochenendeM:time T_WochentagA:time T_WochenendeA:time
+define CUL_HOERMANN_DE5F5354E0 CUL_HOERMANN DE5F5354E0
+setuuid CUL_HOERMANN_DE5F5354E0 5ff21175-f33f-4510-0bfd-1ed9343dec8e9aa7
+attr CUL_HOERMANN_DE5F5354E0 IODev nanoCUL433
+attr CUL_HOERMANN_DE5F5354E0 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_DE5F5354E0 FileLog ./log/CUL_HOERMANN_DE5F5354E0-%Y.log CUL_HOERMANN_DE5F5354E0
+setuuid FileLog_CUL_HOERMANN_DE5F5354E0 5ff21175-f33f-4510-68b8-0872c7a0076bdba3
+attr FileLog_CUL_HOERMANN_DE5F5354E0 logtype text
+attr FileLog_CUL_HOERMANN_DE5F5354E0 room CUL_HOERMANN
+define pushmsg PushNotifier 6C3VDE7DD4DD575BD4DD575BKFTTTBTTBKFTTTBTTB com.fhemSP.app Angi_h ewsSw635iYxZheN .*
+setuuid pushmsg 5ff22bd4-f33f-4510-29f7-c0eeb6c736cfcaa2
+attr pushmsg room Aktien
+define notify_aktie_change notify 906866|906866:Kurs:.* set pushmsg message Kurs
+setuuid notify_aktie_change 5ff233e3-f33f-4510-7a07-cb895b34b0950d26
+attr notify_aktie_change room Aktien
+define CUL_HOERMANN_228B4B0340 CUL_HOERMANN 228B4B0340
+setuuid CUL_HOERMANN_228B4B0340 5ff23982-f33f-4510-c777-672c22478324b64c
+attr CUL_HOERMANN_228B4B0340 IODev nanoCUL433
+attr CUL_HOERMANN_228B4B0340 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_228B4B0340 FileLog ./log/CUL_HOERMANN_228B4B0340-%Y.log CUL_HOERMANN_228B4B0340
+setuuid FileLog_CUL_HOERMANN_228B4B0340 5ff23982-f33f-4510-7a87-4b8f0de7e17ff1e6
+attr FileLog_CUL_HOERMANN_228B4B0340 logtype text
+attr FileLog_CUL_HOERMANN_228B4B0340 room CUL_HOERMANN
+define rs_beschattung DOIF ## 1. Temperaturwert ablesen\
+([?$SELF:rs_Aktiv, "off"] eq "on"\
+and ([rs_sensorHTTP:reading01User:d] < [$SELF:rs_temperature]))\
+(\
+set telebot msg @@Pinte11 Temperatur unter [$SELF:rs_temperature] Grad bei [rs_sensorHTTP:reading01User:d]\
+)
+setuuid rs_beschattung 5ff342df-f33f-4510-d5a5-15227776fbed73d5
+attr rs_beschattung do always
+attr rs_beschattung readingList rs_Aktiv rs_Reset rs_temperature
+attr rs_beschattung room Rolladen
+attr rs_beschattung setList rs_Aktiv:on,off rs_Reset:on rs_temperature:slider,0,0.5,35
+define CUL_HOERMANN_5A6B955390 CUL_HOERMANN 5A6B955390
+setuuid CUL_HOERMANN_5A6B955390 5ff48268-f33f-4510-2ea3-baa3018f2ab25045
+attr CUL_HOERMANN_5A6B955390 IODev nanoCUL433
+attr CUL_HOERMANN_5A6B955390 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_5A6B955390 FileLog ./log/CUL_HOERMANN_5A6B955390-%Y.log CUL_HOERMANN_5A6B955390
+setuuid FileLog_CUL_HOERMANN_5A6B955390 5ff48268-f33f-4510-1e3f-52dc4698f1d66398
+attr FileLog_CUL_HOERMANN_5A6B955390 logtype text
+attr FileLog_CUL_HOERMANN_5A6B955390 room CUL_HOERMANN
+define Funksteckdose_AUTO_OFF at *7:00:00 set Funksteckdose off
+setuuid Funksteckdose_AUTO_OFF 5ff4bb09-f33f-4510-2be1-a87b9857208bca12
+attr Funksteckdose_AUTO_OFF disable 1
+attr Funksteckdose_AUTO_OFF room Weihnachtsbel
+define Funksteckdose_AUTO_ON at *17:00:00 set Funksteckdose on
+setuuid Funksteckdose_AUTO_ON 5ff4bb35-f33f-4510-8d84-687da3e3e3026221
+attr Funksteckdose_AUTO_ON disable 1
+attr Funksteckdose_AUTO_ON room Weihnachtsbel
+define CUL_WS_5 CUL_WS 5
+setuuid CUL_WS_5 5ff57b64-f33f-4510-93c9-ade65535ffdfe93a
+attr CUL_WS_5 room CUL_WS
+define FileLog_CUL_WS_5 FileLog ./log/CUL_WS_5-%Y.log CUL_WS_5:T:.*
+setuuid FileLog_CUL_WS_5 5ff57b64-f33f-4510-d6dc-5f28ae34bbb88cfd
+attr FileLog_CUL_WS_5 logtype temp4hum6:Temp/Hum,text
+attr FileLog_CUL_WS_5 room CUL_WS
+define SVG_CUL_WS_5 SVG FileLog_CUL_WS_5:SVG_CUL_WS_5:CURRENT
+setuuid SVG_CUL_WS_5 5ff57b64-f33f-4510-282d-5604d38236a0a513
+attr SVG_CUL_WS_5 label "CUL_WS_5 Min $data{min1}, Max $data{max1}, Last $data{currval1}"
+attr SVG_CUL_WS_5 room Plots
+define Funksteckdose_SUNR_OFF at *{sunrise_abs()} set Funksteckdose off
+setuuid Funksteckdose_SUNR_OFF 5ff5bf7a-f33f-4510-e297-10e9dcb870fcc6da
+attr Funksteckdose_SUNR_OFF disable 1
+attr Funksteckdose_SUNR_OFF room Weihnachtsbel
+define Funksteckdose_SUNS_ON at *{sunset_abs()} set Funksteckdose on
+setuuid Funksteckdose_SUNS_ON 5ff5bf9b-f33f-4510-5942-ff5f91b73d9d777c
+attr Funksteckdose_SUNS_ON disable 1
+attr Funksteckdose_SUNS_ON room Weihnachtsbel
+define Funksteckdose_MIX_OFF at *{sunrise_abs(0,"","07:30:00")} { if (!($we)) { fhem("set Funksteckdose off") } }
+setuuid Funksteckdose_MIX_OFF 5ff5c834-f33f-4510-1965-df4c27236dcc9ab1
+attr Funksteckdose_MIX_OFF disable 1
+attr Funksteckdose_MIX_OFF room Weihnachtsbel
+define CUL_HOERMANN_5D01A56B00 CUL_HOERMANN 5D01A56B00
+setuuid CUL_HOERMANN_5D01A56B00 5ff649ea-f33f-4510-0d30-a4d81dde7be2d759
+attr CUL_HOERMANN_5D01A56B00 IODev nanoCUL433
+attr CUL_HOERMANN_5D01A56B00 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_5D01A56B00 FileLog ./log/CUL_HOERMANN_5D01A56B00-%Y.log CUL_HOERMANN_5D01A56B00
+setuuid FileLog_CUL_HOERMANN_5D01A56B00 5ff649ea-f33f-4510-f66d-f0aae055de6af211
+attr FileLog_CUL_HOERMANN_5D01A56B00 logtype text
+attr FileLog_CUL_HOERMANN_5D01A56B00 room CUL_HOERMANN
+define CUL_HOERMANN_4848170E40 CUL_HOERMANN 4848170E40
+setuuid CUL_HOERMANN_4848170E40 5ff67d5e-f33f-4510-d2ed-21ce1fa49d03dca1
+attr CUL_HOERMANN_4848170E40 IODev nanoCUL433
+attr CUL_HOERMANN_4848170E40 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_4848170E40 FileLog ./log/CUL_HOERMANN_4848170E40-%Y.log CUL_HOERMANN_4848170E40
+setuuid FileLog_CUL_HOERMANN_4848170E40 5ff67d5e-f33f-4510-229e-2f518a6e39fef059
+attr FileLog_CUL_HOERMANN_4848170E40 logtype text
+attr FileLog_CUL_HOERMANN_4848170E40 room CUL_HOERMANN
+define CUL_HOERMANN_30B5BEE320 CUL_HOERMANN 30B5BEE320
+setuuid CUL_HOERMANN_30B5BEE320 5ff71b0c-f33f-4510-bf78-2eeac333bfb06bb1
+attr CUL_HOERMANN_30B5BEE320 IODev nanoCUL433
+attr CUL_HOERMANN_30B5BEE320 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_30B5BEE320 FileLog ./log/CUL_HOERMANN_30B5BEE320-%Y.log CUL_HOERMANN_30B5BEE320
+setuuid FileLog_CUL_HOERMANN_30B5BEE320 5ff71b0c-f33f-4510-9342-9726f075dd393ede
+attr FileLog_CUL_HOERMANN_30B5BEE320 logtype text
+attr FileLog_CUL_HOERMANN_30B5BEE320 room CUL_HOERMANN
+define CUL_HOERMANN_63A8301B20 CUL_HOERMANN 63A8301B20
+setuuid CUL_HOERMANN_63A8301B20 5ff775fd-f33f-4510-331d-cd0640e36b2745e4
+attr CUL_HOERMANN_63A8301B20 IODev nanoCUL433
+attr CUL_HOERMANN_63A8301B20 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_63A8301B20 FileLog ./log/CUL_HOERMANN_63A8301B20-%Y.log CUL_HOERMANN_63A8301B20
+setuuid FileLog_CUL_HOERMANN_63A8301B20 5ff775fd-f33f-4510-10b1-b3b21079799961b6
+attr FileLog_CUL_HOERMANN_63A8301B20 logtype text
+attr FileLog_CUL_HOERMANN_63A8301B20 room CUL_HOERMANN
+define CUL_HOERMANN_C5A0277970 CUL_HOERMANN C5A0277970
+setuuid CUL_HOERMANN_C5A0277970 5ff806a3-f33f-4510-85c6-7a336f8d6dbd3565
+attr CUL_HOERMANN_C5A0277970 IODev nanoCUL433
+attr CUL_HOERMANN_C5A0277970 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_C5A0277970 FileLog ./log/CUL_HOERMANN_C5A0277970-%Y.log CUL_HOERMANN_C5A0277970
+setuuid FileLog_CUL_HOERMANN_C5A0277970 5ff806a3-f33f-4510-cfcf-c663d875341774b2
+attr FileLog_CUL_HOERMANN_C5A0277970 logtype text
+attr FileLog_CUL_HOERMANN_C5A0277970 room CUL_HOERMANN
+define SVG_FileLog_840400_1 SVG FileLog_840400:SVG_FileLog_840400_1:CURRENT
+setuuid SVG_FileLog_840400_1 5ff8369d-f33f-4510-c305-3ecd4566292106a3
+define MeineAktion at +*02:00:00 {send_Notification("716460", 0.7)}
+setuuid MeineAktion 5ff8d6db-f33f-4510-afd6-e16bd200d5f64ebd
+attr MeineAktion room Aktien
+define CUL_HOERMANN_241072F8C0 CUL_HOERMANN 241072F8C0
+setuuid CUL_HOERMANN_241072F8C0 5ff9e01d-f33f-4510-134b-b51f1c7a842e3319
+attr CUL_HOERMANN_241072F8C0 IODev nanoCUL433
+attr CUL_HOERMANN_241072F8C0 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_241072F8C0 FileLog ./log/CUL_HOERMANN_241072F8C0-%Y.log CUL_HOERMANN_241072F8C0
+setuuid FileLog_CUL_HOERMANN_241072F8C0 5ff9e01d-f33f-4510-787a-cc9799910fbbb632
+attr FileLog_CUL_HOERMANN_241072F8C0 logtype text
+attr FileLog_CUL_HOERMANN_241072F8C0 room CUL_HOERMANN
+define CUL_HOERMANN_46C9D20B80 CUL_HOERMANN 46C9D20B80
+setuuid CUL_HOERMANN_46C9D20B80 5ffa181e-f33f-4510-bc46-1537d96a8265bc3c
+attr CUL_HOERMANN_46C9D20B80 IODev nanoCUL433
+attr CUL_HOERMANN_46C9D20B80 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_46C9D20B80 FileLog ./log/CUL_HOERMANN_46C9D20B80-%Y.log CUL_HOERMANN_46C9D20B80
+setuuid FileLog_CUL_HOERMANN_46C9D20B80 5ffa181e-f33f-4510-5806-18de4a6fd9f30db1
+attr FileLog_CUL_HOERMANN_46C9D20B80 logtype text
+attr FileLog_CUL_HOERMANN_46C9D20B80 room CUL_HOERMANN
+define CUL_HOERMANN_43A2C4C2A0 CUL_HOERMANN 43A2C4C2A0
+setuuid CUL_HOERMANN_43A2C4C2A0 5ffa4afb-f33f-4510-1c67-79ba0ec2dcda1156
+attr CUL_HOERMANN_43A2C4C2A0 IODev nanoCUL433
+attr CUL_HOERMANN_43A2C4C2A0 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_43A2C4C2A0 FileLog ./log/CUL_HOERMANN_43A2C4C2A0-%Y.log CUL_HOERMANN_43A2C4C2A0
+setuuid FileLog_CUL_HOERMANN_43A2C4C2A0 5ffa4afb-f33f-4510-6627-10a699201d811f1d
+attr FileLog_CUL_HOERMANN_43A2C4C2A0 logtype text
+attr FileLog_CUL_HOERMANN_43A2C4C2A0 room CUL_HOERMANN
+define CUL_HOERMANN_0081C81A80 CUL_HOERMANN 0081C81A80
+setuuid CUL_HOERMANN_0081C81A80 5ffa8294-f33f-4510-e852-7ed931688bcc95ab
+attr CUL_HOERMANN_0081C81A80 IODev nanoCUL433
+attr CUL_HOERMANN_0081C81A80 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_0081C81A80 FileLog ./log/CUL_HOERMANN_0081C81A80-%Y.log CUL_HOERMANN_0081C81A80
+setuuid FileLog_CUL_HOERMANN_0081C81A80 5ffa8294-f33f-4510-f4ba-143682158922d4ff
+attr FileLog_CUL_HOERMANN_0081C81A80 logtype text
+attr FileLog_CUL_HOERMANN_0081C81A80 room CUL_HOERMANN
+define CUL_HOERMANN_44AE002080 CUL_HOERMANN 44AE002080
+setuuid CUL_HOERMANN_44AE002080 5ffa9fa2-f33f-4510-f1d8-82b3e92f03433486
+attr CUL_HOERMANN_44AE002080 IODev nanoCUL433
+attr CUL_HOERMANN_44AE002080 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_44AE002080 FileLog ./log/CUL_HOERMANN_44AE002080-%Y.log CUL_HOERMANN_44AE002080
+setuuid FileLog_CUL_HOERMANN_44AE002080 5ffa9fa2-f33f-4510-b30e-b5e2cc26bb473326
+attr FileLog_CUL_HOERMANN_44AE002080 logtype text
+attr FileLog_CUL_HOERMANN_44AE002080 room CUL_HOERMANN
+define CUL_HOERMANN_AE71881860 CUL_HOERMANN AE71881860
+setuuid CUL_HOERMANN_AE71881860 5ffaa3db-f33f-4510-778a-56507f7c9d750878
+attr CUL_HOERMANN_AE71881860 IODev nanoCUL433
+attr CUL_HOERMANN_AE71881860 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_AE71881860 FileLog ./log/CUL_HOERMANN_AE71881860-%Y.log CUL_HOERMANN_AE71881860
+setuuid FileLog_CUL_HOERMANN_AE71881860 5ffaa3db-f33f-4510-364d-b3061db10e5721ad
+attr FileLog_CUL_HOERMANN_AE71881860 logtype text
+attr FileLog_CUL_HOERMANN_AE71881860 room CUL_HOERMANN
+define CUL_HOERMANN_C6E7D0AEA0 CUL_HOERMANN C6E7D0AEA0
+setuuid CUL_HOERMANN_C6E7D0AEA0 5ffb1837-f33f-4510-e74d-867921c963e23273
+attr CUL_HOERMANN_C6E7D0AEA0 IODev nanoCUL433
+attr CUL_HOERMANN_C6E7D0AEA0 room CUL_HOERMANN
+define FileLog_CUL_HOERMANN_C6E7D0AEA0 FileLog ./log/CUL_HOERMANN_C6E7D0AEA0-%Y.log CUL_HOERMANN_C6E7D0AEA0
+setuuid FileLog_CUL_HOERMANN_C6E7D0AEA0 5ffb1837-f33f-4510-1ecd-5ec5fce895d02e42
+attr FileLog_CUL_HOERMANN_C6E7D0AEA0 logtype text
+attr FileLog_CUL_HOERMANN_C6E7D0AEA0 room CUL_HOERMANN
+define 716460 HTTPMOD https://www.finanzen.net/suchergebnis.asp?_search=716460 600
+setuuid 716460 5ffb24a7-f33f-4510-00c3-c89ec451a962dadc
+attr 716460 userattr reading01Name reading01Regex reading02Name reading02Regex reading03Name reading03Regex reading04Name reading04Regex
+attr 716460 reading01Name Bezeichnung
+attr 716460 reading01Regex <h1 class=.font-resize.>([\w\W]{2,50}).Aktie
+attr 716460 reading02Name Kurs
+attr 716460 reading02Regex class=.col-xs-5 col-sm-4 text-sm-right text-nowrap.>([\d\W].{1,15})<span>EUR
+attr 716460 reading03Name change_relativ
+attr 716460 reading03Regex EUR.{1,18}<div class=.col-xs-3.col-sm-3.text-right.text-nowrap[\w\W]{0,50}.>(.\d*\S\d*)<span>%
+attr 716460 reading04Name change_absolut
+attr 716460 reading04Regex class=.col-xs-4.col-sm-3.text-sm-right.text-nowrap.text-center[\w\W]{0,50}.>(.\d*\S\d*).{1,20}EUR
+attr 716460 room Aktien
+attr 716460 stateFormat Bezeichnung: Kurs €
+define FileLog_716460 FileLog ./log/716460-%Y.log 716460:(Kurs).*
+setuuid FileLog_716460 5ffb24a7-f33f-4510-7b3b-305e9fa722d9dbd5
+attr FileLog_716460 logtype text
+attr FileLog_716460 room Aktien
+define 865985 HTTPMOD https://www.finanzen.net/suchergebnis.asp?_search=865985 600
+setuuid 865985 5ffb24c5-f33f-4510-d4bd-90c4b3a5ec517752
+attr 865985 userattr reading01Name reading01Regex reading02Name reading02Regex reading03Name reading03Regex reading04Name reading04Regex
+attr 865985 reading01Name Bezeichnung
+attr 865985 reading01Regex <h1 class=.font-resize.>([\w\W]{2,50}).Aktie
+attr 865985 reading02Name Kurs
+attr 865985 reading02Regex class=.col-xs-5 col-sm-4 text-sm-right text-nowrap.>([\d\W].{1,15})<span>EUR
+attr 865985 reading03Name change_relativ
+attr 865985 reading03Regex EUR.{1,18}<div class=.col-xs-3.col-sm-3.text-right.text-nowrap[\w\W]{0,50}.>(.\d*\S\d*)<span>%
+attr 865985 reading04Name change_absolut
+attr 865985 reading04Regex class=.col-xs-4.col-sm-3.text-sm-right.text-nowrap.text-center[\w\W]{0,50}.>(.\d*\S\d*).{1,20}EUR
+attr 865985 room Aktien
+attr 865985 stateFormat Bezeichnung: Kurs €
+define FileLog_865985 FileLog ./log/865985-%Y.log 865985:(Kurs).*
+setuuid FileLog_865985 5ffb24c5-f33f-4510-19b2-12a99f654b9ef323
+attr FileLog_865985 logtype text
+attr FileLog_865985 room Aktien
+define BASF11 HTTPMOD https://www.finanzen.net/suchergebnis.asp?_search=BASF11 600
+setuuid BASF11 5ffb24d7-f33f-4510-ce78-d5a695bbad808985
+attr BASF11 userattr reading01Name reading01Regex reading02Name reading02Regex reading03Name reading03Regex reading04Name reading04Regex
+attr BASF11 reading01Name Bezeichnung
+attr BASF11 reading01Regex <h1 class=.font-resize.>([\w\W]{2,50}).Aktie
+attr BASF11 reading02Name Kurs
+attr BASF11 reading02Regex class=.col-xs-5 col-sm-4 text-sm-right text-nowrap.>([\d\W].{1,15})<span>EUR
+attr BASF11 reading03Name change_relativ
+attr BASF11 reading03Regex EUR.{1,18}<div class=.col-xs-3.col-sm-3.text-right.text-nowrap[\w\W]{0,50}.>(.\d*\S\d*)<span>%
+attr BASF11 reading04Name change_absolut
+attr BASF11 reading04Regex class=.col-xs-4.col-sm-3.text-sm-right.text-nowrap.text-center[\w\W]{0,50}.>(.\d*\S\d*).{1,20}EUR
+attr BASF11 room Aktien
+attr BASF11 stateFormat Bezeichnung: Kurs €
+define FileLog_BASF11 FileLog ./log/BASF11-%Y.log BASF11:(Kurs).*
+setuuid FileLog_BASF11 5ffb24d7-f33f-4510-8088-cbc50b8fdacef67f
+attr FileLog_BASF11 logtype text
+attr FileLog_BASF11 room Aktien
+define 870747 HTTPMOD https://www.finanzen.net/suchergebnis.asp?_search=870747 600
+setuuid 870747 5ffb2524-f33f-4510-dbfd-05f56d31080fc09b
+attr 870747 userattr reading01Name reading01Regex reading02Name reading02Regex reading03Name reading03Regex reading04Name reading04Regex
+attr 870747 reading01Name Bezeichnung
+attr 870747 reading01Regex <h1 class=.font-resize.>([\w\W]{2,50}).Aktie
+attr 870747 reading02Name Kurs
+attr 870747 reading02Regex class=.col-xs-5 col-sm-4 text-sm-right text-nowrap.>([\d\W].{1,15})<span>EUR
+attr 870747 reading03Name change_relativ
+attr 870747 reading03Regex EUR.{1,18}<div class=.col-xs-3.col-sm-3.text-right.text-nowrap[\w\W]{0,50}.>(.\d*\S\d*)<span>%
+attr 870747 reading04Name change_absolut
+attr 870747 reading04Regex class=.col-xs-4.col-sm-3.text-sm-right.text-nowrap.text-center[\w\W]{0,50}.>(.\d*\S\d*).{1,20}EUR
+attr 870747 room Aktien
+attr 870747 stateFormat Bezeichnung: Kurs €
+define FileLog_870747 FileLog ./log/870747-%Y.log 870747:(Kurs).*
+setuuid FileLog_870747 5ffb2524-f33f-4510-d2ac-7bb497df18382031
+attr FileLog_870747 logtype text
+attr FileLog_870747 room Aktien
+define gb_auto DOIF ##
+setuuid gb_auto 5ffb7cb4-f33f-4510-1556-bf68e6973826eda7
+attr gb_auto room Gartenbew.
+define mqtt2_server MQTT2_SERVER 1883 global
+setuuid mqtt2_server 5ffb8017-f33f-4510-c8a9-404e7eb47d7f7f4b
+attr mqtt2_server autocreate simple
+define WLANSteckdose MQTT2_DEVICE DVES_E7EED0
+setuuid WLANSteckdose 5ffb801d-f33f-4510-226b-c645986a85965d59
+attr WLANSteckdose IODev mqtt2_server
+attr WLANSteckdose autocreate 0
+attr WLANSteckdose comment NOTE: For on-for-timer SetExtensions are used. You may add on-for-timer option running on the device. The following is limited to 1h max duration, but will not affect future simple "on" commands:<br>on-for-timer {my $duration = $EVTPART1*10;; 'cmnd/cmnd/tasmota/Backlog POWER1 1;; delay '.$duration.';; POWER1 0'}<br>See the "Praxisbeispiele" in the wiki for "pulseTime1" alternative option and it's restrictions.
+attr WLANSteckdose devStateIcon on:li_wht_on off:li_wht_off
+attr WLANSteckdose icon hue_filled_outlet
+attr WLANSteckdose jsonMap POWER1:0 POWER2:0 POWER3:0 POWER4:0 Dimmer:0 Channel_0:0 Channel_1:0 Channel_2:0 Channel_3:0 Channel_4:0 HSBColor:0 Color:0
+attr WLANSteckdose model tasmota_basic_state_power1
+attr WLANSteckdose readingList tele/tasmota/LWT:.* LWT\
+  tele/tasmota/STATE:.* { json2nameValue($EVENT,'',$JSONMAP) }\
+  tele/tasmota/SENSOR:.* { json2nameValue($EVENT,'',$JSONMAP) }\
+  tele/tasmota/INFO.:.* { json2nameValue($EVENT,'',$JSONMAP) }\
+  tele/tasmota/UPTIME:.* { json2nameValue($EVENT,'',$JSONMAP) }\
+  stat/tasmota/POWER1:.* state\
+  stat/tasmota/RESULT:.* { json2nameValue($EVENT,'',$JSONMAP) }
+attr WLANSteckdose room Weihnachtsbel
+attr WLANSteckdose setList off:noArg    cmnd/tasmota/POWER1 0\
+  on:noArg     cmnd/tasmota/POWER1 1\
+  toggle:noArg cmnd/tasmota/POWER1 2\
+  setOtaUrl:textField cmnd/tasmota/OtaUrl $EVTPART1\
+  upgrade:noArg   cmnd/tasmota/upgrade 1
+attr WLANSteckdose setStateList on off toggle
+define FileLog_WLANSteckdose FileLog ./log/WLANSteckdose-%Y.log WLANSteckdose
+setuuid FileLog_WLANSteckdose 5ffb801d-f33f-4510-37ca-c8e143c1e42e9e2f
+attr FileLog_WLANSteckdose logtype text
+attr FileLog_WLANSteckdose room Weihnachtsbel
+define WLANSteckdose_AUTO_ON at *18:00:00 set WLANSteckdose on
+setuuid WLANSteckdose_AUTO_ON 5ffb828f-f33f-4510-c89b-937071d98895f402
+attr WLANSteckdose_AUTO_ON disable 1
+attr WLANSteckdose_AUTO_ON room Weihnachtsbel
+define WLANSteckdose_AUTO_OFF at *8:00:00 set WLANSteckdose off
+setuuid WLANSteckdose_AUTO_OFF 5ffb82d1-f33f-4510-2b39-e0df3aaf16ae6b35
+attr WLANSteckdose_AUTO_OFF disable 1
+attr WLANSteckdose_AUTO_OFF room Weihnachtsbel
+define WLANSteckdose_SUNR_OFF at *{sunrise_abs()} set WLANSteckdose off
+setuuid WLANSteckdose_SUNR_OFF 5ffb8463-f33f-4510-df3a-e4f38fcd21c4e9e5
+attr WLANSteckdose_SUNR_OFF disable 1
+attr WLANSteckdose_SUNR_OFF room Weihnachtsbel
+define WLANSteckdose_SUNS_ON at *{sunset_abs()} set WLANSteckdose on
+setuuid WLANSteckdose_SUNS_ON 5ffb8496-f33f-4510-785b-7cfc39f2341baab8
+attr WLANSteckdose_SUNS_ON disable 1
+attr WLANSteckdose_SUNS_ON room Weihnachtsbel
+define WLANSteckdose_MIX_OFF at *{sunrise_abs(0,"","07:30:00")} { if (!($we)) { fhem("set WLANSteckdose off") } }
+setuuid WLANSteckdose_MIX_OFF 5ffb84fb-f33f-4510-69a9-cad5ed310bd4a06e
+attr WLANSteckdose_MIX_OFF disable 1
+attr WLANSteckdose_MIX_OFF room Weihnachtsbel

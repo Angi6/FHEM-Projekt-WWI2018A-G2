@@ -1,0 +1,978 @@
+14 519000 AbsolutChange: &p
+85 519000 AbsolutChange: +.*
+192 519000 AbsolutChange: -.*
+292 519000 Name: BMW
+291 519000 Price: .*
+85 519000 RelativeChange: +.*
+192 519000 RelativeChange: -.*
+12 520000 AbsolutChange: &p
+86 520000 AbsolutChange: +.*
+192 520000 AbsolutChange: -.*
+290 520000 Name: Beiersdorf
+290 520000 Price: .*
+86 520000 RelativeChange: +.*
+192 520000 RelativeChange: -.*
+7 710000 AbsolutChange: &p
+16 710000 AbsolutChange: +.*
+149 710000 AbsolutChange: -.*
+173 710000 Name: Daimler
+172 710000 Price: .*
+16 710000 RelativeChange: +.*
+149 710000 RelativeChange: -.*
+21 716460 AbsolutChange: &p
+218 716460 AbsolutChange: +.*
+172 716460 AbsolutChange: -.*
+411 716460 Name: SAP
+411 716460 Price: .*
+218 716460 RelativeChange: +.*
+172 716460 RelativeChange: -.*
+60 865985 AbsolutChange: &p
+75 865985 AbsolutChange: +.*
+158 865985 AbsolutChange: -.*
+293 865985 Name: Apple
+293 865985 Price: .*
+75 865985 RelativeChange: +.*
+158 865985 RelativeChange: -.*
+415 906866 AbsolutChange: +.*
+431 906866 AbsolutChange: -.*
+846 906866 Name: Amazon
+846 906866 Price: .*
+415 906866 RelativeChange: +.*
+431 906866 RelativeChange: -.*
+178 A0HGDX AbsolutChange: +.*
+31 A0HGDX AbsolutChange: -.*
+209 A0HGDX Name: Gamestop A
+209 A0HGDX Price: .*
+178 A0HGDX RelativeChange: +.*
+31 A0HGDX RelativeChange: -.*
+187 A1CX3T AbsolutChange: +.*
+253 A1CX3T AbsolutChange: -.*
+440 A1CX3T Name: Tesla
+440 A1CX3T Price: .*
+187 A1CX3T RelativeChange: +.*
+253 A1CX3T RelativeChange: -.*
+36 A1EWWW AbsolutChange: &p
+158 A1EWWW AbsolutChange: +.*
+648 A1EWWW AbsolutChange: -.*
+842 A1EWWW Name: adidas
+842 A1EWWW Price: .*
+158 A1EWWW RelativeChange: +.*
+648 A1EWWW RelativeChange: -.*
+3 A2PSR2 AbsolutChange: &p
+204 A2PSR2 AbsolutChange: +.*
+118 A2PSR2 AbsolutChange: -.*
+1126 A2PSR2 Bezeichnung: BioNTech (ADRs)
+1126 A2PSR2 Kurs: .*
+325 A2PSR2 Name: BioNTech (ADRs)
+325 A2PSR2 Price: .*
+204 A2PSR2 RelativeChange: +.*
+118 A2PSR2 RelativeChange: -.*
+5 A2PSR2 absolut: &p
+359 A2PSR2 absolut: +.*
+719 A2PSR2 absolut: -.*
+43 A2PSR2 change_absolut: -.*
+359 A2PSR2 change_relativ: +.*
+762 A2PSR2 change_relativ: -.*
+4737 Anwesenheit state: absent
+20528 Anwesenheit state: present
+18 Anwesenheit state: undefined
+12 BASF11 AbsolutChange: &p
+50 BASF11 AbsolutChange: +.*
+146 BASF11 AbsolutChange: -.*
+209 BASF11 Name: BASF
+208 BASF11 Price: .*
+50 BASF11 RelativeChange: +.*
+146 BASF11 RelativeChange: -.*
+1 FS20_a033fd state: off
+1 FS20_a033fd state: on
+398 Funksteckdose state: off
+11 Funksteckdose state: off Funksteckdose off
+33 Funksteckdose state: off Funksteckdose on
+1 Funksteckdose state: off attr room Weihnachtsbel
+185 Funksteckdose state: on
+6 Funksteckdose state: on Funksteckdose off
+34 Funksteckdose state: on Funksteckdose on
+86 Funksteckdose_ANWS cmd: .*
+40 Funksteckdose_ANWS cmd_event: Anwesenheit
+3 Funksteckdose_ANWS cmd_event: set_cmd_1
+3 Funksteckdose_ANWS cmd_event: set_cmd_2
+1 Funksteckdose_ANWS cmd_event: timer_4
+47 Funksteckdose_ANWS cmd_nr: .*
+205 Funksteckdose_ANWS mode: deactivated
+39 Funksteckdose_ANWS mode: enabled
+18 Funksteckdose_ANWS state: cmd_1
+28 Funksteckdose_ANWS state: cmd_2
+1 Funksteckdose_ANWS state: cmd_3
+205 Funksteckdose_ANWS state: deactivated
+39 Funksteckdose_ANWS state: initialized
+3 Funksteckdose_ANWS wait_timer: .* cmd_1 Anwesenheit
+2 Funksteckdose_ANWS wait_timer: .* cmd_2 Anwesenheit
+5 Funksteckdose_ANWS wait_timer: no timer
+75 Funksteckdose_AUTO_OFF state: Next: .*
+212 Funksteckdose_AUTO_OFF state: disabled
+75 Funksteckdose_AUTO_ON state: Next: .*
+212 Funksteckdose_AUTO_ON state: disabled
+65 Funksteckdose_MIX_OFF state: Next: .*
+233 Funksteckdose_MIX_OFF state: disabled
+73 Funksteckdose_SUNR_OFF state: Next: .*
+222 Funksteckdose_SUNR_OFF state: disabled
+100 Funksteckdose_SUNS_ON state: Next: .*
+190 Funksteckdose_SUNS_ON state: disabled
+5 PAH003 AbsolutChange: +.*
+43 PAH003 AbsolutChange: -.*
+48 PAH003 Name: Porsche
+48 PAH003 Price: .*
+5 PAH003 RelativeChange: +.*
+43 PAH003 RelativeChange: -.*
+1 Regen_Log clear
+1 SVG_CUL_WS_5 copyGplotFile
+1 SVG_FileLog_840400_1 copyGplotFile
+1734 WLANSteckdose ENERGY_ApparentPower: .*
+1734 WLANSteckdose ENERGY_Current: .*
+1734 WLANSteckdose ENERGY_Factor: .*
+1734 WLANSteckdose ENERGY_Period: .*
+1734 WLANSteckdose ENERGY_Power: .*
+1734 WLANSteckdose ENERGY_ReactivePower: .*
+1734 WLANSteckdose ENERGY_Today: .*
+1734 WLANSteckdose ENERGY_Total: .*
+1734 WLANSteckdose ENERGY_TotalStartTime: .*
+1734 WLANSteckdose ENERGY_Voltage: .*
+1734 WLANSteckdose ENERGY_Yesterday: .*
+2 WLANSteckdose FallbackTopic: cmnd/DVES_E7EED0_fb/
+2 WLANSteckdose GroupTopic: cmnd/tasmotas/
+1735 WLANSteckdose Heap: .*
+2 WLANSteckdose Hostname: tasmota.*
+2 WLANSteckdose IPAddress: .*
+21 WLANSteckdose LWT: Offline
+28 WLANSteckdose LWT: Online
+1735 WLANSteckdose LoadAvg: .*
+2 WLANSteckdose Module: Teckin
+1735 WLANSteckdose MqttCount: .*
+1 WLANSteckdose POWER:
+1 WLANSteckdose RestartReason: Power on
+1 WLANSteckdose RestartReason: Software/System restart
+1 WLANSteckdose SaveData: on
+1 WLANSteckdose SetOption26: on
+1735 WLANSteckdose Sleep: .*
+1735 WLANSteckdose SleepMode: Dynamic
+1 WLANSteckdose StateText1: off
+1 WLANSteckdose StateText2: on
+1 WLANSteckdose StateText3: toggle
+1 WLANSteckdose StateText4: hold
+3469 WLANSteckdose Time: .*
+20 WLANSteckdose Uptime: 0T00:.*
+12 WLANSteckdose Uptime: 0T01:.*
+12 WLANSteckdose Uptime: 0T02:.*
+12 WLANSteckdose Uptime: 0T03:.*
+12 WLANSteckdose Uptime: 0T04:.*
+12 WLANSteckdose Uptime: 0T05:.*
+12 WLANSteckdose Uptime: 0T06:.*
+12 WLANSteckdose Uptime: 0T07:.*
+12 WLANSteckdose Uptime: 0T08:.*
+12 WLANSteckdose Uptime: 0T09:.*
+12 WLANSteckdose Uptime: 0T10:.*
+6 WLANSteckdose Uptime: 0T11:.*
+2 WLANSteckdose Uptime: 0T18:.*
+12 WLANSteckdose Uptime: 0T19:.*
+12 WLANSteckdose Uptime: 0T20:.*
+12 WLANSteckdose Uptime: 0T21:.*
+12 WLANSteckdose Uptime: 0T22:.*
+12 WLANSteckdose Uptime: 0T23:.*
+12 WLANSteckdose Uptime: 1T00:.*
+12 WLANSteckdose Uptime: 1T01:.*
+12 WLANSteckdose Uptime: 1T02:.*
+12 WLANSteckdose Uptime: 1T03:.*
+12 WLANSteckdose Uptime: 1T04:.*
+12 WLANSteckdose Uptime: 1T05:.*
+12 WLANSteckdose Uptime: 1T06:.*
+12 WLANSteckdose Uptime: 1T07:.*
+12 WLANSteckdose Uptime: 1T08:.*
+12 WLANSteckdose Uptime: 1T09:.*
+12 WLANSteckdose Uptime: 1T10:.*
+12 WLANSteckdose Uptime: 1T11:.*
+12 WLANSteckdose Uptime: 1T12:.*
+12 WLANSteckdose Uptime: 1T13:.*
+12 WLANSteckdose Uptime: 1T14:.*
+12 WLANSteckdose Uptime: 1T15:.*
+12 WLANSteckdose Uptime: 1T16:.*
+12 WLANSteckdose Uptime: 1T17:.*
+12 WLANSteckdose Uptime: 1T18:.*
+12 WLANSteckdose Uptime: 1T19:.*
+12 WLANSteckdose Uptime: 1T20:.*
+12 WLANSteckdose Uptime: 1T21:.*
+12 WLANSteckdose Uptime: 1T22:.*
+12 WLANSteckdose Uptime: 1T23:.*
+12 WLANSteckdose Uptime: 2T00:.*
+12 WLANSteckdose Uptime: 2T01:.*
+12 WLANSteckdose Uptime: 2T02:.*
+12 WLANSteckdose Uptime: 2T03:.*
+12 WLANSteckdose Uptime: 2T04:.*
+12 WLANSteckdose Uptime: 2T05:.*
+12 WLANSteckdose Uptime: 2T06:.*
+12 WLANSteckdose Uptime: 2T07:.*
+12 WLANSteckdose Uptime: 2T08:.*
+12 WLANSteckdose Uptime: 2T09:.*
+12 WLANSteckdose Uptime: 2T10:.*
+12 WLANSteckdose Uptime: 2T11:.*
+12 WLANSteckdose Uptime: 2T12:.*
+12 WLANSteckdose Uptime: 2T13:.*
+12 WLANSteckdose Uptime: 2T14:.*
+12 WLANSteckdose Uptime: 2T15:.*
+12 WLANSteckdose Uptime: 2T16:.*
+12 WLANSteckdose Uptime: 2T17:.*
+12 WLANSteckdose Uptime: 2T18:.*
+12 WLANSteckdose Uptime: 2T19:.*
+12 WLANSteckdose Uptime: 2T20:.*
+12 WLANSteckdose Uptime: 2T21:.*
+12 WLANSteckdose Uptime: 2T22:.*
+12 WLANSteckdose Uptime: 2T23:.*
+12 WLANSteckdose Uptime: 3T00:.*
+12 WLANSteckdose Uptime: 3T01:.*
+12 WLANSteckdose Uptime: 3T02:.*
+12 WLANSteckdose Uptime: 3T03:.*
+12 WLANSteckdose Uptime: 3T04:.*
+12 WLANSteckdose Uptime: 3T05:.*
+12 WLANSteckdose Uptime: 3T06:.*
+12 WLANSteckdose Uptime: 3T07:.*
+11 WLANSteckdose Uptime: 3T08:.*
+12 WLANSteckdose Uptime: 3T09:.*
+12 WLANSteckdose Uptime: 3T10:.*
+12 WLANSteckdose Uptime: 3T11:.*
+12 WLANSteckdose Uptime: 3T12:.*
+12 WLANSteckdose Uptime: 3T13:.*
+12 WLANSteckdose Uptime: 3T14:.*
+12 WLANSteckdose Uptime: 3T15:.*
+12 WLANSteckdose Uptime: 3T16:.*
+12 WLANSteckdose Uptime: 3T17:.*
+12 WLANSteckdose Uptime: 3T18:.*
+12 WLANSteckdose Uptime: 3T19:.*
+12 WLANSteckdose Uptime: 3T20:.*
+12 WLANSteckdose Uptime: 3T21:.*
+12 WLANSteckdose Uptime: 3T22:.*
+12 WLANSteckdose Uptime: 3T23:.*
+12 WLANSteckdose Uptime: 4T00:.*
+12 WLANSteckdose Uptime: 4T01:.*
+12 WLANSteckdose Uptime: 4T02:.*
+12 WLANSteckdose Uptime: 4T03:.*
+12 WLANSteckdose Uptime: 4T04:.*
+12 WLANSteckdose Uptime: 4T05:.*
+12 WLANSteckdose Uptime: 4T06:.*
+12 WLANSteckdose Uptime: 4T07:.*
+12 WLANSteckdose Uptime: 4T08:.*
+12 WLANSteckdose Uptime: 4T09:.*
+12 WLANSteckdose Uptime: 4T10:.*
+12 WLANSteckdose Uptime: 4T11:.*
+12 WLANSteckdose Uptime: 4T12:.*
+12 WLANSteckdose Uptime: 4T13:.*
+12 WLANSteckdose Uptime: 4T14:.*
+12 WLANSteckdose Uptime: 4T15:.*
+12 WLANSteckdose Uptime: 4T16:.*
+6 WLANSteckdose Uptime: 4T17:.*
+5 WLANSteckdose Uptime: 4T18:.*
+12 WLANSteckdose Uptime: 4T19:.*
+12 WLANSteckdose Uptime: 4T20:.*
+12 WLANSteckdose Uptime: 4T21:.*
+12 WLANSteckdose Uptime: 4T22:.*
+12 WLANSteckdose Uptime: 4T23:.*
+12 WLANSteckdose Uptime: 5T00:.*
+12 WLANSteckdose Uptime: 5T01:.*
+12 WLANSteckdose Uptime: 5T02:.*
+12 WLANSteckdose Uptime: 5T03:.*
+3 WLANSteckdose Uptime: 5T04:.*
+5 WLANSteckdose Uptime: 5T06:.*
+12 WLANSteckdose Uptime: 5T07:.*
+12 WLANSteckdose Uptime: 5T08:.*
+12 WLANSteckdose Uptime: 5T09:.*
+12 WLANSteckdose Uptime: 5T10:.*
+12 WLANSteckdose Uptime: 5T11:.*
+12 WLANSteckdose Uptime: 5T12:.*
+12 WLANSteckdose Uptime: 5T13:.*
+12 WLANSteckdose Uptime: 5T14:.*
+12 WLANSteckdose Uptime: 5T15:.*
+12 WLANSteckdose Uptime: 5T16:.*
+12 WLANSteckdose Uptime: 5T17:.*
+12 WLANSteckdose Uptime: 5T18:.*
+12 WLANSteckdose Uptime: 5T19:.*
+12 WLANSteckdose Uptime: 5T20:.*
+12 WLANSteckdose Uptime: 5T21:.*
+12 WLANSteckdose Uptime: 5T22:.*
+12 WLANSteckdose Uptime: 5T23:.*
+12 WLANSteckdose Uptime: 6T00:.*
+12 WLANSteckdose Uptime: 6T01:.*
+12 WLANSteckdose Uptime: 6T02:.*
+12 WLANSteckdose Uptime: 6T03:.*
+12 WLANSteckdose Uptime: 6T04:.*
+12 WLANSteckdose Uptime: 6T05:.*
+12 WLANSteckdose Uptime: 6T06:.*
+12 WLANSteckdose Uptime: 6T07:.*
+12 WLANSteckdose Uptime: 6T08:.*
+12 WLANSteckdose Uptime: 6T09:.*
+9 WLANSteckdose Uptime: 6T10:.*
+1735 WLANSteckdose UptimeSec: .*
+2 WLANSteckdose Version: .*(tasmota)
+2 WLANSteckdose WebServerMode: Admin
+1735 WLANSteckdose Wifi_AP: .*
+6 WLANSteckdose Wifi_BSSId: .*
+1729 WLANSteckdose Wifi_BSSId: F0:B0:.*
+1735 WLANSteckdose Wifi_Channel: .*
+1735 WLANSteckdose Wifi_Downtime: 0T00:.*
+1735 WLANSteckdose Wifi_LinkCount: .*
+1735 WLANSteckdose Wifi_RSSI: .*
+1735 WLANSteckdose Wifi_SSId: FRITZ!Box 7490_2,.*
+1735 WLANSteckdose Wifi_Signal: -.*
+1 WLANSteckdose attrTemplate speechcontrol_type_switch
+1 WLANSteckdose attrTemplate tasmota_set_lowercase_texts_and_state1
+1 WLANSteckdose attrTemplateVersion: .* or prior
+47 WLANSteckdose state: off
+32 WLANSteckdose state: on
+43 WLANSteckdose state: set_off
+31 WLANSteckdose state: set_on
+1 WLANSteckdose state: set_toggle
+82 WLANSteckdose_ANWS cmd: .*
+44 WLANSteckdose_ANWS cmd_event: Anwesenheit
+1 WLANSteckdose_ANWS cmd_event: timer_3
+1 WLANSteckdose_ANWS cmd_event: timer_4
+46 WLANSteckdose_ANWS cmd_nr: .*
+145 WLANSteckdose_ANWS mode: deactivated
+36 WLANSteckdose_ANWS mode: enabled
+18 WLANSteckdose_ANWS state: cmd_1
+28 WLANSteckdose_ANWS state: cmd_2
+145 WLANSteckdose_ANWS state: deactivated
+36 WLANSteckdose_ANWS state: initialized
+42 WLANSteckdose_AUTO_OFF state: Next: .*
+200 WLANSteckdose_AUTO_OFF state: disabled
+42 WLANSteckdose_AUTO_ON state: Next: .*
+200 WLANSteckdose_AUTO_ON state: disabled
+39 WLANSteckdose_MIX_OFF state: Next: .*
+203 WLANSteckdose_MIX_OFF state: disabled
+54 WLANSteckdose_SUNR_OFF state: Next: .*
+190 WLANSteckdose_SUNR_OFF state: disabled
+68 WLANSteckdose_SUNS_ON state: Next: .*
+176 WLANSteckdose_SUNS_ON state: disabled
+448 Zisterne distance: .*
+1 Zisterne state: distance
+185 Zisterne volume: .*
+3 Zisterne water_level:
+1 Zisterne waterlvl:
+295 Zisterne waterlvl: .*
+1 allowed_WEB state: validFor:WEB
+3 automatikBew_garten block_01: condition c01: Undefined subroutine &main::getTemp called, line .*.
+2 automatikBew_garten block_01: condition c01: syntax error at (eval .*, near ")
+4 automatikBew_garten block_01: condition c01: syntax error, line .*, near "msg @@"
+4 automatikBew_garten block_01: condition c01: syntax error, line .*::"
+445 automatikBew_garten block_01: executed
+1 automatikBew_garten day_0: .*
+7 automatikBew_garten day_0_0: .*
+2 automatikBew_garten day_0_0: Dienstag
+1 automatikBew_garten day_0_0: Donnerstag
+2 automatikBew_garten day_0_0: Montag
+3 automatikBew_garten day_0_1: .*
+1 automatikBew_garten day_0_1: Dienstag
+2 automatikBew_garten day_0_1: Donnerstag
+2 automatikBew_garten day_0_1: Freitag
+1 automatikBew_garten day_0_1: Mittwoch
+9 automatikBew_garten day_1: .*
+9 automatikBew_garten duration_0: .*
+1 automatikBew_garten e_automatikBew_day_0: .*
+3 automatikBew_garten e_automatikBew_day_0_0: .*
+2 automatikBew_garten e_automatikBew_day_0_1: .*
+6 automatikBew_garten e_automatikBew_day_1: .*
+6 automatikBew_garten e_automatikBew_duration_0: .*
+2 automatikBew_garten e_automatikBew_garten_day_0_0: .*
+2 automatikBew_garten e_automatikBew_garten_day_0_0: Dienstag
+1 automatikBew_garten e_automatikBew_garten_day_0_0: Donnerstag
+2 automatikBew_garten e_automatikBew_garten_day_0_0: Montag
+1 automatikBew_garten e_automatikBew_garten_day_0_1: Dienstag
+2 automatikBew_garten e_automatikBew_garten_day_0_1: Donnerstag
+2 automatikBew_garten e_automatikBew_garten_day_0_1: Freitag
+1 automatikBew_garten e_automatikBew_garten_day_0_1: Mittwoch
+2 automatikBew_garten e_automatikBew_garten_duration_0: .*
+11 automatikBew_garten e_automatikBew_garten_rain_amount_0_0: .*
+6 automatikBew_garten e_automatikBew_garten_rain_amount_0_1: .*
+3 automatikBew_garten e_automatikBew_garten_rain_interval_0_0: .*
+3 automatikBew_garten e_automatikBew_garten_rain_interval_0_1: .*
+11 automatikBew_garten e_automatikBew_garten_start_button: off
+11 automatikBew_garten e_automatikBew_garten_start_button: on
+2 automatikBew_garten e_automatikBew_garten_temp_avg_0: -.*
+3 automatikBew_garten e_automatikBew_garten_temp_avg_0: .*
+1 automatikBew_garten e_automatikBew_garten_temp_cur_0_0: -.*
+2 automatikBew_garten e_automatikBew_garten_temp_cur_0_0: .*
+27 automatikBew_garten e_automatikBew_garten_temp_cur_0_1: .*
+1 automatikBew_garten e_automatikBew_garten_temp_interval_0: .*
+6 automatikBew_garten e_automatikBew_garten_wind_gust_0: .*
+4 automatikBew_garten e_automatikBew_garten_wind_standard_0: .*
+25 automatikBew_garten e_automatikBew_rain_amount_0_0: .*
+8 automatikBew_garten e_automatikBew_rain_amount_0_1: .*
+1 automatikBew_garten e_automatikBew_rain_interval_0_0:
+10 automatikBew_garten e_automatikBew_rain_interval_0_0: .*
+6 automatikBew_garten e_automatikBew_rain_interval_0_1: .*
+2 automatikBew_garten e_automatikBew_rain_interval_1_0: .*
+6 automatikBew_garten e_automatikBew_rain_interval_1_1: .*
+163 automatikBew_garten e_automatikBew_start_button: off
+166 automatikBew_garten e_automatikBew_start_button: on
+9 automatikBew_garten e_automatikBew_start_time: .*
+4 automatikBew_garten e_automatikBew_temp_avg_0: -.*
+8 automatikBew_garten e_automatikBew_temp_avg_0: .*
+6 automatikBew_garten e_automatikBew_temp_cur_0: -.*
+2 automatikBew_garten e_automatikBew_temp_cur_0: .*
+2 automatikBew_garten e_automatikBew_temp_cur_0_0: -.*
+4 automatikBew_garten e_automatikBew_temp_cur_0_0: .*
+1 automatikBew_garten e_automatikBew_temp_cur_0_1: -.*
+2 automatikBew_garten e_automatikBew_temp_cur_0_1: .*
+3 automatikBew_garten e_automatikBew_temp_interval_0: .*
+2 automatikBew_garten e_automatikBew_wind_gust_0: .*
+6 automatikBew_garten e_automatikBew_wind_standard_0: .*
+1 automatikBew_garten mode: disabled
+190 automatikBew_garten mode: enabled
+44 automatikBew_garten rain_amount_0_0: .*
+1 automatikBew_garten rain_amount_0_0: initialized
+15 automatikBew_garten rain_amount_0_1: .*
+1 automatikBew_garten rain_amount_0_1: initialized
+7 automatikBew_garten rain_amount_1_0: .*
+6 automatikBew_garten rain_amount_1_1: .*
+1 automatikBew_garten rain_interval_0_0:
+14 automatikBew_garten rain_interval_0_0: .*
+4 automatikBew_garten rain_interval_0_1:
+13 automatikBew_garten rain_interval_0_1: .*
+3 automatikBew_garten rain_interval_1_0: .*
+1 automatikBew_garten rain_interval_1_0: initialized
+7 automatikBew_garten rain_interval_1_1: .*
+181 automatikBew_garten start_button: off
+185 automatikBew_garten start_button: on
+47 automatikBew_garten start_time: .*
+6 automatikBew_garten temp_avg_0: -.*
+18 automatikBew_garten temp_avg_0: .*
+2 automatikBew_garten temp_avg_1: .*
+6 automatikBew_garten temp_cur_0: -.*
+4 automatikBew_garten temp_cur_0: .*
+3 automatikBew_garten temp_cur_0_0: -.*
+7 automatikBew_garten temp_cur_0_0: .*
+1 automatikBew_garten temp_cur_0_1: -.*
+30 automatikBew_garten temp_cur_0_1: .*
+1 automatikBew_garten temp_cur_0_1: initialized
+1 automatikBew_garten temp_cur_1: .*
+9 automatikBew_garten temp_interval_0: .*
+3 automatikBew_garten temp_interval_1: .*
+37 automatikBew_garten timer_01_c01: .*
+2 automatikBew_garten warning: condition c01: 	(Missing operator before
+43 automatikBew_garten warning: condition c01: 	(Missing operator before ::?)
+5 automatikBew_garten warning: condition c01: 	(Missing operator before fhem?)
+4 automatikBew_garten warning: condition c01: 	(Missing operator before yqcebtmu0192?)
+15 automatikBew_garten warning: condition c01: Argument "Dienstag" isn't numeric in numeric eq (==)
+36 automatikBew_garten warning: condition c01: Argument "Donnerstag" isn't numeric in numeric eq (==)
+3 automatikBew_garten warning: condition c01: Argument "Freitag" isn't numeric in numeric eq (==)
+5 automatikBew_garten warning: condition c01: Argument "Mittwoch" isn't numeric in numeric eq (==)
+9 automatikBew_garten wind_gust_0: .*
+1 automatikBew_garten wind_gust_1: .*
+11 automatikBew_garten wind_standard_0: .*
+1 automatikBew_garten wind_standard_1: .*
+56 automatikBew_wiese block_01: executed
+2 automatikBew_wiese day_1_0: .*
+1 automatikBew_wiese day_1_0: Montag
+1 automatikBew_wiese day_1_1: .*
+1 automatikBew_wiese day_1_1: Donnerstag
+3 automatikBew_wiese duration_1: .*
+2 automatikBew_wiese e_automatikBew_wiese_day_1_0: .*
+1 automatikBew_wiese e_automatikBew_wiese_day_1_0: Montag
+1 automatikBew_wiese e_automatikBew_wiese_day_1_1: .*
+1 automatikBew_wiese e_automatikBew_wiese_day_1_1: Donnerstag
+3 automatikBew_wiese e_automatikBew_wiese_duration_1: .*
+7 automatikBew_wiese e_automatikBew_wiese_rain_amount_1_0: .*
+5 automatikBew_wiese e_automatikBew_wiese_rain_amount_1_1: .*
+2 automatikBew_wiese e_automatikBew_wiese_rain_interval_1_0: .*
+2 automatikBew_wiese e_automatikBew_wiese_rain_interval_1_1: .*
+3 automatikBew_wiese e_automatikBew_wiese_start_button: off
+4 automatikBew_wiese e_automatikBew_wiese_start_button: on
+2 automatikBew_wiese e_automatikBew_wiese_temp_avg_1: -.*
+3 automatikBew_wiese e_automatikBew_wiese_temp_avg_1: .*
+1 automatikBew_wiese e_automatikBew_wiese_temp_cur_1_0: -.*
+3 automatikBew_wiese e_automatikBew_wiese_temp_cur_1_0: .*
+3 automatikBew_wiese e_automatikBew_wiese_temp_cur_1_1: .*
+2 automatikBew_wiese e_automatikBew_wiese_temp_interval_1: .*
+8 automatikBew_wiese e_automatikBew_wiese_wind_gust_1: .*
+8 automatikBew_wiese e_automatikBew_wiese_wind_standard_1: .*
+8 automatikBew_wiese mode: enabled
+7 automatikBew_wiese rain_amount_1_0: .*
+5 automatikBew_wiese rain_amount_1_1: .*
+2 automatikBew_wiese rain_interval_1_0: .*
+2 automatikBew_wiese rain_interval_1_1: .*
+3 automatikBew_wiese start_button: off
+4 automatikBew_wiese start_button: on
+22 automatikBew_wiese start_time: .*
+2 automatikBew_wiese temp_avg_1: -.*
+3 automatikBew_wiese temp_avg_1: .*
+1 automatikBew_wiese temp_cur_1_0: -.*
+3 automatikBew_wiese temp_cur_1_0: .*
+3 automatikBew_wiese temp_cur_1_1: .*
+2 automatikBew_wiese temp_interval_1: .*
+22 automatikBew_wiese timer_01_c01: .*
+1 automatikBew_wiese warning: condition c01: Argument "" isn't numeric in numeric eq (==)
+1 automatikBew_wiese warning: condition c01: Argument "Dienstag" isn't numeric in numeric eq (==)
+40 automatikBew_wiese warning: condition c01: Argument "Donnerstag" isn't numeric in numeric eq (==)
+6 automatikBew_wiese warning: condition c01: Argument "Mittwoch" isn't numeric in numeric eq (==)
+8 automatikBew_wiese wind_gust_1: .*
+8 automatikBew_wiese wind_standard_1: .*
+6 betriebszeit_aktualisieren state: Next: .*
+27 d_betriebsmodus_funk state: ANWESENHEIT
+42 d_betriebsmodus_funk state: AUTOMATIK
+37 d_betriebsmodus_funk state: DAEMMERUNG
+28 d_betriebsmodus_funk state: MANUELL
+30 d_betriebsmodus_funk state: MIX
+18 d_betriebsmodus_funk state: NONE
+1 d_betriebsmodus_funk state: TEST
+21 d_betriebsmodus_wlan state: ANWESENHEIT
+12 d_betriebsmodus_wlan state: AUTOMATIK
+22 d_betriebsmodus_wlan state: DAEMMERUNG
+27 d_betriebsmodus_wlan state: MANUELL
+14 d_betriebsmodus_wlan state: MIX
+7 d_betriebsmodus_wlan state: NONE
+31 d_zeit_funk_off state: AUS: .*
+28 d_zeit_funk_off state: AUS: Manueller Betrieb
+3 d_zeit_funk_off state: AUS:.*
+1 d_zeit_funk_on state: .*
+31 d_zeit_funk_on state: AN: .*
+28 d_zeit_funk_on state: AN: Manueller Betrieb
+3 d_zeit_funk_on state: AN:.*
+1 d_zeit_funk_on state: ON: .*
+1 d_zeit_funk_on state: bis
+2 d_zeit_funk_on state: ed bis ed
+49 d_zeit_wlan_off state: AUS: .*
+24 d_zeit_wlan_off state: AUS: Manueller Betrieb
+49 d_zeit_wlan_on state: AN: .*
+24 d_zeit_wlan_on state: AN: Manueller Betrieb
+1 gb_auto cmd: .*
+1 gb_auto mode: enabled
+1 gb_auto state: initialized
+3 halbautomatikBew_garten block_01: condition c01: syntax error, line .*, near "set ::ReadingValDoIf"
+16 halbautomatikBew_garten current_time_garten: .*
+3 halbautomatikBew_garten duration_0: .*
+17 halbautomatikBew_garten mode: enabled
+19 halbautomatikBew_garten start_button: off
+15 halbautomatikBew_garten start_button: on
+11 halbautomatikBew_garten start_time_0: .*
+18 halbautomatikBew_garten timer_garten: .*
+3 halbautomatikBew_garten warning: condition c01: 	(Missing operator before "off"?)
+2 halbautomatikBew_wiese current_time_garten: .*
+5 halbautomatikBew_wiese duration_1: .*
+6 halbautomatikBew_wiese mode: enabled
+7 halbautomatikBew_wiese start_button: off
+6 halbautomatikBew_wiese start_button: on
+11 halbautomatikBew_wiese start_time_1: .*
+2 halbautomatikBew_wiese timer_garten: .*
+2376 handy_luca presence: absent
+10704 handy_luca presence: present
+2376 handy_luca state: absent
+10704 handy_luca state: present
+12224 lapi_luca presence: absent
+12224 lapi_luca state: absent
+5 lapi_luca state: timeout
+9 manuellBew_garten duration_0: .*
+6 manuellBew_garten mode: enabled
+25 manuellBew_garten start_button: off
+17 manuellBew_garten start_button: on
+4 manuellBew_garten timer_man_0_0: .*
+8 manuellBew_wiese duration_1: .*
+7 manuellBew_wiese mode: enabled
+15 manuellBew_wiese start_button: off
+15 manuellBew_wiese start_button: on
+2 manuellBew_wiese timer_man_0_0: .*
+86 mqtt2_server nrclients: .*
+2 myShelly btn_type toggle
+1 myShelly cloud: disabled
+1 myShelly config btn_type momentary
+2 myShelly config btn_type toggle
+1 myShelly config btn_type toggle .*
+1 myShelly config btn_type=momentary .*
+1 myShelly config btn_type=momentary [.*]
+3 myShelly config btn_type=momentary [channel .*]
+1 myShelly config btn_type=toggle [channel .*]
+1 myShelly config: btn_type=momentary [channel .*]
+6 myShelly config: btn_type=toggle [channel .*]
+2 myShelly config: mode=relay [channel s]
+304 myShelly energy_0: .*
+40 myShelly energy_1: .*
+3 myShelly firmware: master
+3 myShelly firmware: master(update needed to v1.*)
+3 myShelly firmware: v1.*
+4 myShelly firmware: v1.*)
+2592 myShelly network: not connected
+94 myShelly off
+7 myShelly off .*
+1 myShelly ol
+161 myShelly on
+1 myShelly on "Channel .*"
+1 myShelly on "channel .*"
+1 myShelly on 'channel .*'
+19 myShelly on .*
+4 myShelly on .* myShelly off
+4 myShelly on .* myShelly on
+1 myShelly on [.*]
+1 myShelly on [channel .*]
+2 myShelly on [channel .*] myShelly off
+4 myShelly on [channel .*] myShelly on
+1 myShelly on [channel0]
+2 myShelly on channel .*
+1 myShelly on channel1
+3 myShelly on-for-time #timerGarten .* myShelly off
+4 myShelly on-for-time #timerGarten .* myShelly on
+114 myShelly on-for-timer .*
+1 myShelly overpower: .*
+521 myShelly overpower_0: .*
+160 myShelly overpower_1: .*
+630 myShelly power_0: .*
+130 myShelly power_1: .*
+1 myShelly relay on
+1 myShelly relay: off
+263 myShelly relay_0: off
+348 myShelly relay_0: on
+88 myShelly relay_1: off
+100 myShelly relay_1: on
+2689 myShelly state: Error
+800 myShelly state: OK
+117 myShelly state: initialized
+1 myShelly state: off
+2 myShelly toggle
+10 myShelly toggle .*
+89 myShelly toggle .* myShelly off
+251 myShelly toggle .* myShelly on
+2 myShelly toggle [channel .*] myShelly off
+2 myShelly toggle [channel .*] myShelly on
+68 nanoCUL433 CONNECTED
+9 nanoCUL433 DISCONNECTED
+24 nanoCUL433 UNKNOWNCODE K
+1 nanoCUL433 UNKNOWNCODE K03
+1 nanoCUL433 UNKNOWNCODE K04
+1 nanoCUL433 UNKNOWNCODE K0E
+1 nanoCUL433 UNKNOWNCODE K41
+1 nanoCUL433 UNKNOWNCODE K4E
+1 nanoCUL433 UNKNOWNCODE K5A
+1 nanoCUL433 UNKNOWNCODE K66
+1 nanoCUL433 UNKNOWNCODE K77
+1 nanoCUL433 UNKNOWNCODE K79
+1 nanoCUL433 UNKNOWNCODE K87FC
+1 nanoCUL433 UNKNOWNCODE K8E
+1 nanoCUL433 UNKNOWNCODE K8F
+1 nanoCUL433 UNKNOWNCODE KA6
+1 nanoCUL433 UNKNOWNCODE KAA
+1 nanoCUL433 UNKNOWNCODE KAE
+1 nanoCUL433 UNKNOWNCODE KD2
+1 nanoCUL433 UNKNOWNCODE KE6
+1 nanoCUL433 UNKNOWNCODE KF2
+1 nanoCUL433 UNKNOWNCODE KFF
+4 nanoCUL433 ccconf: freq:.*.376MHz bWidth:58KHz rAmpl:24dB sens:4dB
+10 nanoCUL433 cmds: A B C E e F f G h i K k l M m R T t U V W X x Y Z z
+1 nanoCUL433 freq .*
+2 nanoCUL433 raw: is0FFF0FFF0FF0
+7 nanoCUL433 raw: is0FFF0FFF0FFF
+443 nanoCUL433 raw: is0FFFF0FF0FF0
+225 nanoCUL433 raw: is0FFFF0FF0FFF
+10 nanoCUL433 state: Initialized
+1 nanoCUL433 version: V .* nanoCUL433
+1 notify_aktie_change addRegexpPart .*
+2 notify_aktie_change state: active
+1 notify_aktie_change state: inactive
+37 regensensor_aussen SummierteRegenmenge1: .*
+37 regensensor_aussen SummierteRegenmenge2: .*
+10 regensensor_aussen SummierteRegenmenge: .*
+68 regensensor_aussen rainamount: .*
+1 regensensor_aussen reading01User:
+426 regensensor_aussen reading01User: .*
+23 regensensor_aussen reread
+3 regensensor_aussen start
+104 regensensor_aussen statReading01User: Hour: .* )
+11 regensensor_aussen statReading01UserLast: Hour: .* Day: - Month: - Year: -
+22 regensensor_aussen statReading01UserLast: Hour: .* Month: - Year: -
+2 regensensor_aussen stop
+11 rollerTimer T_Aktiv: off
+12 rollerTimer T_Aktiv: on
+13 rollerTimer T_Reset: on
+9 rollerTimer T_WochenendeA: .*
+2 rollerTimer T_WochenendeM: .*
+4 rollerTimer T_WochentagA: .*
+6 rollerTimer T_WochentagM: .*
+30 rollerTimer cmd: .*
+4 rollerTimer cmd_event: timer_1
+2 rollerTimer cmd_event: timer_2
+3 rollerTimer cmd_event: timer_3
+5 rollerTimer cmd_event: timer_4
+14 rollerTimer cmd_nr: .*
+16 rollerTimer mode: enabled
+8 rollerTimer state: cmd_1
+6 rollerTimer state: cmd_2
+16 rollerTimer state: initialized
+19 rs_TempDummy temp: .*
+51 rs_beschattung cmd: .*
+15 rs_beschattung cmd_event: rs_TempDummy
+1 rs_beschattung cmd_event: rs_beschattung
+8 rs_beschattung cmd_event: rs_sensorHTTP
+4 rs_beschattung cmd_event: set_cmd_1
+2 rs_beschattung cmd_event: timer_5
+30 rs_beschattung cmd_nr: .*
+7 rs_beschattung cmd_seqnr: .*
+30 rs_beschattung delay: .*
+1 rs_beschattung error: condition c01: syntax error, line .*, near "rs_beschattung:"
+1 rs_beschattung error: set rs_shelly open: Error: roller blind still moving, wait for some time
+21 rs_beschattung mode: enabled
+30 rs_beschattung pct: .*
+1 rs_beschattung rs_Aktiv: off
+2 rs_beschattung rs_Aktiv: on
+2 rs_beschattung rs_delay: .*
+2 rs_beschattung rs_offset .*
+3 rs_beschattung rs_offset: .*
+2 rs_beschattung rs_pct: .*
+7 rs_beschattung rs_temperature: .*
+20 rs_beschattung state: cmd_1
+2 rs_beschattung state: cmd_1_1
+5 rs_beschattung state: cmd_2
+1 rs_beschattung state: cmd_2_1
+2 rs_beschattung state: cmd_3
+21 rs_beschattung state: initialized
+30 rs_beschattung tempHoch: .*
+2 rs_beschattung wait_timer: .* cmd_1_2 rs_TempDummy
+1 rs_beschattung wait_timer: .* cmd_2_2 rs_TempDummy
+4 rs_beschattung wait_timer: no timer
+154 rs_sensorHTTP Durchschnittstemperatur: -.*
+2776 rs_sensorHTTP Durchschnittstemperatur: .*
+5 rs_sensorHTTP Temperatur: .*
+568 rs_sensorHTTP reading01User: -.*
+3543 rs_sensorHTTP reading01User: .*
+31 rs_sensorHTTP reread
+2 rs_sensorHTTP start
+2 rs_sensorHTTP statTemperatureDayLast: Min: .*
+1 rs_sensorHTTP statTemperatureDayLast: Min: .* )
+1 rs_sensorHTTP stop
+475 rs_sensorHTTP temperature: -.*
+3100 rs_sensorHTTP temperature: .*
+2 rs_shelly closed
+7 rs_shelly closed on
+1 rs_shelly cloud: disabled
+1 rs_shelly config: maxtime= [channel s]
+1 rs_shelly config: mode=roller [channel s]
+46 rs_shelly energy_0: .*
+2 rs_shelly firmware: master
+3 rs_shelly firmware: master(update needed to v1.*)
+2 rs_shelly firmware: v1.*
+3 rs_shelly firmware: v1.*)
+10 rs_shelly last_dir: down
+2 rs_shelly last_dir: stop
+10 rs_shelly last_dir: up
+1829 rs_shelly network: not connected
+11 rs_shelly open
+7 rs_shelly open on
+41 rs_shelly pct .*
+81 rs_shelly pct: .*
+44 rs_shelly position: .*
+18 rs_shelly position: closed
+23 rs_shelly position: open
+40 rs_shelly power: .*
+46 rs_shelly power_0: .*
+1869 rs_shelly state: Error
+90 rs_shelly state: initialized
+21 rs_shelly state: moving_down
+30 rs_shelly state: moving_up
+119 rs_shelly state: stopped
+19 rs_shelly stop
+1 rs_shelly stop_reason: normal
+1 rs_shelly zero
+1 telebot Contacts: .*::#SmartWifi_FHEM
+8 telebot PollingErrCount: .*
+1 telebot _msg Test message
+1 telebot message @@Pinte11 Hallo
+1 telebot message @@Pinte11 Test
+1 telebot message Hallo ich bin ein Bot!
+1 telebot msg #SmartWifi_FHEM TEST
+1 telebot msg 'hallo'
+2 telebot msg .*
+1 telebot msg @ @Pinte11 Hello
+1 telebot msg @ @Pinte11 Kurs für SAP ist in den letzten .*% gestiegen
+5 telebot msg @ @yqcebtmu0192 Kurs für Tesla ist in den letzten .*% gestiegen
+5 telebot msg @#SmartWifi_FHEM Kurs für Apple ist in den letzten .*% gefallen
+4 telebot msg @#SmartWifi_FHEM Kurs für BASF ist in den letzten .*% gefallen
+29 telebot msg @#SmartWifi_FHEM Kurs für SAP ist in den letzten .*% gefallen
+1 telebot msg @#SmartWifi_FHEM Kurs für SAP ist in den letzten .*% gestiegen
+1 telebot msg @#SmartWifi_FHEM TEST2
+1 telebot msg @-.*°C
+1 telebot msg @@Angela_WWI2018A Gruß von Angi
+1 telebot msg @@Angela_WWI2018A Grüßle
+3 telebot msg @@Angela_WWI2018A Hello
+12 telebot msg @@Angela_WWI2018A Kurs für SAP ist in den letzten .*% gestiegen
+1 telebot msg @@Angela_WWI2018A Kurs für Tesla ist in den letzten .*% gestiegen
+1 telebot msg @@Angela_WWI2018A Weil es so schön war noch ein Gruß von mir
+1 telebot msg @@Pinte11 "Hier ist ein Test von Angi"
+1 telebot msg @@Pinte11 @@smart_lightning Das hier ist ein Test
+1 telebot msg @@Pinte11 Das hier ist ein Test
+7 telebot msg @@Pinte11 Der Kurs für Amazon ist in den letzten .*% gefallen
+4 telebot msg @@Pinte11 Der Kurs für Amazon ist in den letzten .*% gestiegen
+11 telebot msg @@Pinte11 Der Kurs für Apple ist in den letzten .*% gefallen
+8 telebot msg @@Pinte11 Der Kurs für Apple ist in den letzten .*% gestiegen
+10 telebot msg @@Pinte11 Der Kurs für SAP ist in den letzten .*% gestiegen
+2 telebot msg @@Pinte11 Gruß von Angi
+1 telebot msg @@Pinte11 Grüßle
+2 telebot msg @@Pinte11 Hello
+5 telebot msg @@Pinte11 Kurs für Amazon ist in den letzten .*% gestiegen
+11 telebot msg @@Pinte11 Kurs für SAP ist in den letzten .*% gestiegen
+4 telebot msg @@Pinte11 Temperatur ueber .*
+1 telebot msg @@Pinte11 Temperatur unter (.*
+13 telebot msg @@Pinte11 Temperatur unter .*
+1 telebot msg @@Pinte11 Temperatur unter .* Grad
+2 telebot msg @@Pinte11 Temperatur unter .*°C
+1 telebot msg @@Pinte11 Temperatur unter ReadingVal(rs_beschattung:rs_temperature) Grad
+1 telebot msg @@Pinte11 Temperatur unter rs_beschattung:rs_temperature Grad
+4 telebot msg @@Pinte11 Temperatur über .*°C
+1 telebot msg @@Pinte11 Test
+1 telebot msg @@Pinte11 Test2
+1 telebot msg @@Pinte11 Test3
+1 telebot msg @@Pinte11 Timer
+6 telebot msg @@Pinte11 TimerAbends
+6 telebot msg @@Pinte11 TimerMorgens
+1 telebot msg @@Pinte11 Weil es so schön war noch ein Gruß von mir
+1 telebot msg @@smart_lightning "Hier ist ein Test von Angi"
+7 telebot msg @@smart_lightning -.*
+19 telebot msg @@smart_lightning .*
+5 telebot msg @@smart_lightning Cumulated rain amount over last .*.
+7 telebot msg @@smart_lightning Current Temp is -.*
+5 telebot msg @@smart_lightning DOIF
+2 telebot msg @@smart_lightning DOIF started
+1 telebot msg @@smart_lightning Die Nachricht ist
+2 telebot msg @@smart_lightning Gruß von Angi
+1 telebot msg @@smart_lightning Grüßle
+3 telebot msg @@smart_lightning Hallo
+3 telebot msg @@smart_lightning Hello
+12 telebot msg @@smart_lightning Kurs für SAP ist in den letzten .*% gestiegen
+3 telebot msg @@smart_lightning Start of DOIF
+1 telebot msg @@smart_lightning Test
+1 telebot msg @@smart_lightning Test_message
+1 telebot msg @@smart_lightning Weil es so schön war noch ein Gruß von mir
+1 telebot msg @@smart_lightning hallöle
+5 telebot msg @@yqcebtmu0192 Cumulated rain amount over last .*.
+1 telebot msg @@yqcebtmu0192 DOIF
+2 telebot msg @@yqcebtmu0192 DOIF started
+2 telebot msg @@yqcebtmu0192 Gruß von Angi
+1 telebot msg @@yqcebtmu0192 Hallo
+18 telebot msg @@yqcebtmu0192 Kurs für Tesla ist in den letzten .*% gefallen
+4 telebot msg @@yqcebtmu0192 Kurs für Tesla ist in den letzten .*% gestiegen
+1 telebot msg @@yqcebtmu0192 Weil es so schön war noch ein Gruß von mir
+2 telebot msg @@yqcebtmz0192 DOIF
+1 telebot msg @Angela "Hier ist ein Test von Angi"
+169 telebot msg @Angela Keine Nachricht bekommen
+1 telebot msg @Angela Kurs für .* gefallen
+1 telebot msg @Angela Kurs für .* gestiegen
+20 telebot msg @Angela Kurs für .* ist gefallen
+12 telebot msg @Angela Kurs für .* ist gestiegen
+1 telebot msg @Angela Kurs für .*% gefallen
+1 telebot msg @Angela Kurs für A2PSR2 ist gefallen
+2 telebot msg @Angela Kurs für A2PSR2 ist gestiegen
+1 telebot msg @Angela Kurs für Allianz ist in den letzten .*% gefallen
+2 telebot msg @Angela Kurs für Amazon ist in den letzten .*% gefallen
+40 telebot msg @Angela Kurs für Apple ist in den letzten .*% gefallen
+29 telebot msg @Angela Kurs für Apple ist in den letzten .*% gestiegen
+58 telebot msg @Angela Kurs für BASF ist in den letzten .*% gefallen
+14 telebot msg @Angela Kurs für BASF ist in den letzten .*% gestiegen
+1 telebot msg @Angela Kurs für BASF11 ist gefallen
+5 telebot msg @Angela Kurs für BASF11 ist gestiegen
+9 telebot msg @Angela Kurs für Beiersdorf ist in den letzten .*% gestiegen
+1 telebot msg @Angela Kurs für Beiersdorf ist in den letzten NotFound h um .*% gestiegen
+20 telebot msg @Angela Kurs für BioNTech (ADRs) ist in den letzten .*% gefallen
+16 telebot msg @Angela Kurs für BioNTech (ADRs) ist in den letzten .*% gestiegen
+2 telebot msg @Angela Kurs für BioNTech (ADRs) ist in den letzten NotFound h um gestiegen
+20 telebot msg @Angela Kurs für Continental ist in den letzten .*% gefallen
+2 telebot msg @Angela Kurs für Continental ist in den letzten NotFound h um gestiegen
+2 telebot msg @Angela Kurs für Microsoft ist in den letzten .*% gestiegen
+22 telebot msg @Angela Kurs für NotFound ist in den letzten NotFound h um gestiegen
+36 telebot msg @Angela Kurs für SAP ist in den letzten .*% gefallen
+122 telebot msg @Angela Kurs für SAP ist in den letzten .*% gestiegen
+8 telebot msg @Angela Kurs für SAP ist in den letzten NotFound h um gestiegen
+2 telebot msg @Angela Kurs für adidas ist in den letzten .*% gestiegen
+1 telebot msg Chris_McQueen 'Hallo'
+43 telebot msg Cumulated rain amount over last .*.
+11 telebot msg Current Temp is -.*
+3 telebot msg Current average Temp is -.*
+1 telebot msg Current average Temp is -.* for last automatikBew:temp_interval_0 sec
+1 telebot msg Current average Temp is -.* for last automatikBew:temp_interval_1 sec
+2 telebot msg Current average Temp is -.* sec
+8 telebot msg Current average Temp is .* sec
+1 telebot msg Default Gruppe
+9 telebot msg Die Bewässerung des Gartens wurde erfolgreich gestartet.
+4 telebot msg Die Bewässerung ist vorbei
+1 telebot msg Hallo
+1 telebot msg Kurs für BioNTech (ADRs) ist in den letzten .*% gefallen
+2 telebot msg Kurs für NotFound ist in den letzten NotFound h um gestiegen
+6 telebot msg Kurs für SAP ist in den letzten .*% gestiegen
+2 telebot msg Start time:
+4 telebot msg Start time: .*
+1 telebot msg Temperatur isch hoch genug bei der Pumpe .*
+1 telebot msg Temperatur isch zu niedrig bei der Pumpe .*! Hasch an Haaahhhnaa?
+3 telebot msg Test
+1 telebot msg Test Nachricht
+1 telebot msg smart_lightning Hallo
+1 telebot msg successMessage
+1 telebot msg time: %02d:%02d
+1 telebot msg time: .*
+2 telebot msgChat: #Rolladensteuerung
+22 telebot msgChat: #SmartWifi_FHEM
+6 telebot msgChat: Angela
+3 telebot msgChat: Chris_McQueen
+5 telebot msgChat: Luca
+24 telebot msgChatId: -.*
+14 telebot msgChatId: .*
+38 telebot msgFileId:
+38 telebot msgId: .*
+15 telebot msgPeer: Angela
+10 telebot msgPeer: Chris_McQueen
+8 telebot msgPeer: Luca
+5 telebot msgPeer: Steffen
+38 telebot msgPeerId: .*
+36 telebot msgReplyMsgId:
+2 telebot msgReplyMsgId: .*
+8 telebot msgText: /start
+1 telebot msgText: /start Hallo
+1 telebot msgText: Aber voll gut das es klappt !
+2 telebot msgText: Als ob jetzt 😂😂
+1 telebot msgText: Danke für den Spam 😂
+1 telebot msgText: Debugging
+2 telebot msgText: Gruß von Angi ?😂
+1 telebot msgText: Haha sorry
+2 telebot msgText: Hallo
+2 telebot msgText: Hallo bot
+1 telebot msgText: He du kek
+1 telebot msgText: Ja Hallo
+2 telebot msgText: Jo
+1 telebot msgText: Lit
+1 telebot msgText: Nix sry xD
+1 telebot msgText: Oha sehr nice
+1 telebot msgText: Schön, dass ein Kurs um -.*% steigt 🧐
+1 telebot msgText: Sehr lieb von Angi 😜
+1 telebot msgText: Servus
+1 telebot msgText: Sorry Leute..einfach ignorieren
+1 telebot msgText: Test
+1 telebot msgText: Update
+1 telebot reset
+45 telebot sentMsgId:
+1836 telebot sentMsgId: .*
+36 telebot sentMsgPeerId:
+288 telebot sentMsgPeerId: -.*
+1557 telebot sentMsgPeerId: .*
+1 telebot sentMsgResult: Callback returned error :Bad Request: chat not found:
+7 telebot sentMsgResult: Callback returned error :Forbidden: bot was blocked by the user:
+1 telebot sentMsgResult: NonBlockingGet: returned FAILED peer not found :@.*:
+1 telebot sentMsgResult: NonBlockingGet: returned FAILED peer not found :@@Pinte11:
+1 telebot sentMsgResult: NonBlockingGet: returned FAILED peer not found :@@yqcebtmu0192:
+1 telebot sentMsgResult: NonBlockingGet: returned FAILED peer not found :@Angela:
+1 telebot sentMsgResult: NonBlockingGet: returned FAILED peer not found :@Chris_McQueen:
+1 telebot sentMsgResult: NonBlockingGet: returned FAILED peer not found :@Luca:
+1 telebot sentMsgResult: NonBlockingGet: returned FAILED peer not found :@Smart_lightning:
+1 telebot sentMsgResult: NonBlockingGet: returned FAILED peer not found :@Steffen:
+2 telebot sentMsgResult: NonBlockingGet: returned FAILED peer not found :@smart_lightning:
+9 telebot sentMsgResult: NonBlockingGet: returned FAILED peer not found :@yqcebtmu0192:
+2 telebot sentMsgResult: NonBlockingGet: returned FAILED peer not found :@yqcebtmz0192:
+1 telebot sentMsgResult: NonBlockingGet: returned FAILED peer not found :Angela,:
+1 telebot sentMsgResult: NonBlockingGet: returned FAILED peer not found :Pinte11:
+1 telebot sentMsgResult: NonBlockingGet: returned FAILED peer not found :smart_lightning,:
+3 telebot sentMsgResult: NonBlockingGet: returned FAILED peer not found :smart_lightning:
+1 telebot sentMsgResult: NonBlockingGet: returned FAILED peer not found :yqcebtmu0192:
+1836 telebot sentMsgResult: SUCCESS
+88 test state: pct .*
+5956 windsensor_aussen gust: .*
+1 windsensor_aussen reread
+1 windsensor_aussen start
+5958 windsensor_aussen windspeed: .*

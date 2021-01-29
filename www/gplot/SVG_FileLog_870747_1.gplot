@@ -1,0 +1,20 @@
+# Created by FHEM/98_SVG.pm, 2021-01-07 19:21:49
+set terminal png transparent size <SIZE> crop
+set output '<OUT>.png'
+set xdata time
+set timefmt "%Y-%m-%d_%H:%M:%S"
+set xlabel " "
+set title '<TL>'
+set ytics 
+set y2tics 
+set grid
+set ylabel "Kurs"
+set y2label "Veränderung absolut"
+set yrange [100:220]
+set y2range [-20:30]
+
+#FileLog_870747 4:870747.Kurs\x3a::
+#FileLog_870747 4:870747.change_absolut\x3a::
+
+plot "<IN>" using 1:2 axes x1y2 title 'Kurs' ls l0 lw 0.2 with lines,\
+     "<IN>" using 1:2 axes x1y1 title 'Veränderung' ls l3 lw 0.2 with lines

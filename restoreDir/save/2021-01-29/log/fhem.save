@@ -1,0 +1,472 @@
+#Thu Jan 28 18:44:45 2021
+setstate 519000 BMW: 71,00 €
+setstate 519000 2021-01-28 18:36:05 AbsolutChange -0,34
+setstate 519000 2021-01-28 18:36:05 Name BMW
+setstate 519000 2021-01-28 18:36:05 Price 71,00
+setstate 519000 2021-01-28 18:36:05 RelativeChange -0,48
+setstate 520000 Beiersdorf: 91,86 €
+setstate 520000 2021-01-28 18:36:05 AbsolutChange +0,44
+setstate 520000 2021-01-28 18:36:05 Name Beiersdorf
+setstate 520000 2021-01-28 18:36:05 Price 91,86
+setstate 520000 2021-01-28 18:36:05 RelativeChange +0,48
+setstate 710000 Daimler: 57,56 €
+setstate 710000 2021-01-28 18:36:04 AbsolutChange +0,57
+setstate 710000 2021-01-28 18:36:04 Name Daimler
+setstate 710000 2021-01-28 18:36:04 Price 57,56
+setstate 710000 2021-01-28 18:36:04 RelativeChange +1,00
+setstate 716460 SAP: 109,00 €
+setstate 716460 2021-01-28 18:36:04 AbsolutChange -1,14
+setstate 716460 2021-01-28 18:36:04 Name SAP
+setstate 716460 2021-01-28 18:36:04 Price 109,00
+setstate 716460 2021-01-28 18:36:04 RelativeChange -1,04
+setstate 865985 Apple: 116,64 €
+setstate 865985 2021-01-28 18:36:04 AbsolutChange -1,76
+setstate 865985 2021-01-28 18:36:04 Name Apple
+setstate 865985 2021-01-28 18:36:04 Price 116,64
+setstate 865985 2021-01-28 18:36:04 RelativeChange -1,49
+setstate 906866 Amazon: 2.698,50 €
+setstate 906866 2021-01-28 18:36:04 AbsolutChange +42,50
+setstate 906866 2021-01-28 18:36:04 Name Amazon
+setstate 906866 2021-01-28 18:36:04 Price 2.698,50
+setstate 906866 2021-01-28 18:36:04 RelativeChange +1,60
+setstate A0HGDX Gamestop A: 227,00 €
+setstate A0HGDX 2021-01-28 18:36:05 AbsolutChange -58,80
+setstate A0HGDX 2021-01-28 18:36:05 Name Gamestop A
+setstate A0HGDX 2021-01-28 18:36:05 Price 227,00
+setstate A0HGDX 2021-01-28 18:36:05 RelativeChange -20,57
+setstate A1CX3T Tesla: 691,00 €
+setstate A1CX3T 2021-01-28 18:36:04 AbsolutChange -38,60
+setstate A1CX3T 2021-01-28 18:36:04 Name Tesla
+setstate A1CX3T 2021-01-28 18:36:04 Price 691,00
+setstate A1CX3T 2021-01-28 18:36:04 RelativeChange -5,29
+setstate A1EWWW adidas: 267,80 €
+setstate A1EWWW 2021-01-28 18:36:04 AbsolutChange -0,30
+setstate A1EWWW 2021-01-28 18:36:04 Name adidas
+setstate A1EWWW 2021-01-28 18:36:04 Price 267,80
+setstate A1EWWW 2021-01-28 18:36:04 RelativeChange -0,11
+setstate A2PSR2 BioNTech (ADRs): 90,99 €
+setstate A2PSR2 2021-01-28 18:36:04 AbsolutChange +0,99
+setstate A2PSR2 2021-01-28 18:36:04 Name BioNTech (ADRs)
+setstate A2PSR2 2021-01-28 18:36:04 Price 90,99
+setstate A2PSR2 2021-01-28 18:36:04 RelativeChange +1,10
+setstate Anwesenheit present
+setstate Anwesenheit 2021-01-28 18:44:32 LastDevice handy_luca
+setstate Anwesenheit 2021-01-28 18:44:32 LastDevice_Abs handy_luca
+setstate Anwesenheit 2021-01-28 18:44:32 state present
+setstate BASF11 BASF: 64,58 €
+setstate BASF11 2021-01-28 18:36:04 AbsolutChange +1,15
+setstate BASF11 2021-01-28 18:36:04 Name BASF
+setstate BASF11 2021-01-28 18:36:04 Price 64,58
+setstate BASF11 2021-01-28 18:36:04 RelativeChange +1,81
+setstate CUL_HOERMANN_1A9B01C870 Defined
+setstate CUL_HOERMANN_29693D7100 Defined
+setstate CUL_HOERMANN_2A057E2080 Defined
+setstate CUL_HOERMANN_2EE142D920 Defined
+setstate CUL_HOERMANN_44E3F6E000 Defined
+setstate CUL_HOERMANN_45B9F22F60 Defined
+setstate CUL_HOERMANN_4D084C18E0 Defined
+setstate CUL_HOERMANN_620FA40DC0 Defined
+setstate CUL_HOERMANN_7A32134620 Defined
+setstate CUL_HOERMANN_909A12B340 Defined
+setstate CUL_HOERMANN_A2205FC020 Defined
+setstate CUL_HOERMANN_C002E395A0 Defined
+setstate CUL_HOERMANN_F62C020000 Defined
+setstate FS20_a033fd off
+setstate FS20_a033fd 2021-01-28 09:09:41 state off
+setstate FileLog_519000 active
+setstate FileLog_519000 2021-01-28 18:36:05 linesInTheFile 294
+setstate FileLog_520000 active
+setstate FileLog_520000 2021-01-28 18:36:05 linesInTheFile 293
+setstate FileLog_710000 active
+setstate FileLog_710000 2021-01-28 18:36:04 linesInTheFile 175
+setstate FileLog_716460 active
+setstate FileLog_716460 2021-01-28 18:36:04 linesInTheFile 414
+setstate FileLog_865985 active
+setstate FileLog_865985 2021-01-28 18:36:04 linesInTheFile 296
+setstate FileLog_906866 active
+setstate FileLog_906866 2021-01-28 18:36:04 linesInTheFile 1157
+setstate FileLog_A0HGDX active
+setstate FileLog_A0HGDX 2021-01-28 18:36:05 linesInTheFile 212
+setstate FileLog_A1CX3T active
+setstate FileLog_A1CX3T 2021-01-28 18:36:04 linesInTheFile 443
+setstate FileLog_A1EWWW active
+setstate FileLog_A1EWWW 2021-01-28 18:36:04 linesInTheFile 1155
+setstate FileLog_A2PSR2 active
+setstate FileLog_A2PSR2 2021-01-28 18:36:04 linesInTheFile 328
+setstate FileLog_BASF11 active
+setstate FileLog_BASF11 2021-01-28 18:36:05 linesInTheFile 211
+setstate FileLog_CUL_HOERMANN_1A9B01C870 active
+setstate FileLog_CUL_HOERMANN_29693D7100 active
+setstate FileLog_CUL_HOERMANN_2A057E2080 active
+setstate FileLog_CUL_HOERMANN_2EE142D920 active
+setstate FileLog_CUL_HOERMANN_44E3F6E000 active
+setstate FileLog_CUL_HOERMANN_45B9F22F60 active
+setstate FileLog_CUL_HOERMANN_4D084C18E0 active
+setstate FileLog_CUL_HOERMANN_620FA40DC0 active
+setstate FileLog_CUL_HOERMANN_7A32134620 active
+setstate FileLog_CUL_HOERMANN_909A12B340 active
+setstate FileLog_CUL_HOERMANN_A2205FC020 active
+setstate FileLog_CUL_HOERMANN_C002E395A0 active
+setstate FileLog_CUL_HOERMANN_F62C020000 active
+setstate FileLog_FS20_a033fd active
+setstate FileLog_FS20_a033fd 2021-01-28 09:09:41 linesInTheFile 2
+setstate FileLog_PAH003 active
+setstate FileLog_PAH003 2021-01-28 18:36:05 linesInTheFile 51
+setstate FileLog_WLANSteckdose active
+setstate FileLog_WLANSteckdose 2021-01-28 18:43:43 linesInTheFile 135384
+setstate Funksteckdose off
+setstate Funksteckdose 2020-12-18 23:02:47 protocol V1
+setstate Funksteckdose 2021-01-28 18:33:38 state off
+setstate Funksteckdose_ANWS deactivated
+setstate Funksteckdose_ANWS 2021-01-28 18:33:36 mode deactivated
+setstate Funksteckdose_ANWS 2021-01-28 18:33:36 state deactivated
+setstate Funksteckdose_AUTO_OFF disabled
+setstate Funksteckdose_AUTO_OFF 2021-01-28 18:33:36 state disabled
+setstate Funksteckdose_AUTO_ON disabled
+setstate Funksteckdose_AUTO_ON 2021-01-28 18:33:36 state disabled
+setstate Funksteckdose_MIX_OFF disabled
+setstate Funksteckdose_MIX_OFF 2021-01-28 18:33:36 state disabled
+setstate Funksteckdose_SUNR_OFF disabled
+setstate Funksteckdose_SUNR_OFF 2021-01-28 18:33:36 state disabled
+setstate Funksteckdose_SUNS_ON disabled
+setstate Funksteckdose_SUNS_ON 2021-01-28 18:33:36 state disabled
+setstate Logfile active
+setstate Logfile 2021-01-01 00:00:01 linesInTheFile 0
+setstate PAH003 Porsche: 58,38 €
+setstate PAH003 2021-01-28 18:36:05 AbsolutChange +0,28
+setstate PAH003 2021-01-28 18:36:05 Name Porsche
+setstate PAH003 2021-01-28 18:36:05 Price 58,38
+setstate PAH003 2021-01-28 18:36:05 RelativeChange +0,48
+setstate RegenDummy_Log active
+setstate RegenDummy_Log 2021-01-17 16:05:59 linesInTheFile 16
+setstate Regen_Log active
+setstate Regen_Log 2021-01-28 18:16:05 linesInTheFile 58
+setstate Regenmenge_Log active
+setstate Regenmenge_Log 2021-01-28 18:16:05 linesInTheFile 53
+setstate SVG_CUL_WS_5 initialized
+setstate SVG_FileLog_840400_1 initialized
+setstate TABLETUI TABLETUI
+setstate Temperatur_Log active
+setstate Temperatur_Log 2021-01-28 18:36:04 linesInTheFile 4424
+setstate WEB 2021-01-28 18:15:48 state Initialized
+setstate WEBphone 2021-01-28 18:15:48 state Initialized
+setstate WLANSteckdose on
+setstate WLANSteckdose 2021-01-28 18:40:00 ENERGY_ApparentPower 0
+setstate WLANSteckdose 2021-01-28 18:40:00 ENERGY_Current 0.000
+setstate WLANSteckdose 2021-01-28 18:40:00 ENERGY_Factor 0.00
+setstate WLANSteckdose 2021-01-28 18:40:00 ENERGY_Period 0
+setstate WLANSteckdose 2021-01-28 18:40:00 ENERGY_Power 0
+setstate WLANSteckdose 2021-01-28 18:40:00 ENERGY_ReactivePower 0
+setstate WLANSteckdose 2021-01-28 18:40:00 ENERGY_Today 0.005
+setstate WLANSteckdose 2021-01-28 18:40:00 ENERGY_Total 0.007
+setstate WLANSteckdose 2021-01-28 18:40:00 ENERGY_TotalStartTime 2021-01-10T18:10:17
+setstate WLANSteckdose 2021-01-28 18:40:00 ENERGY_Voltage 0
+setstate WLANSteckdose 2021-01-28 18:40:00 ENERGY_Yesterday 0.001
+setstate WLANSteckdose 2021-01-27 22:44:38 FallbackTopic cmnd/DVES_E7EED0_fb/
+setstate WLANSteckdose 2021-01-27 22:44:38 GroupTopic cmnd/tasmotas/
+setstate WLANSteckdose 2021-01-28 18:40:00 Heap 31
+setstate WLANSteckdose 2021-01-27 22:44:38 Hostname tasmota-3792
+setstate WLANSteckdose 2021-01-27 22:44:38 IPAddress 192.168.178.103
+setstate WLANSteckdose 2021-01-28 18:16:03 LWT Online
+setstate WLANSteckdose 2021-01-28 18:40:00 LoadAvg 19
+setstate WLANSteckdose 2021-01-27 22:44:38 Module Teckin
+setstate WLANSteckdose 2021-01-28 18:40:00 MqttCount 5
+setstate WLANSteckdose 2021-01-27 22:44:38 RestartReason Power on
+setstate WLANSteckdose 2021-01-28 18:40:00 Sleep 50
+setstate WLANSteckdose 2021-01-28 18:40:00 SleepMode Dynamic
+setstate WLANSteckdose 2021-01-28 18:40:00 Time 2021-01-28T18:40:01
+setstate WLANSteckdose 2021-01-28 18:40:00 Uptime 0T19:55:31
+setstate WLANSteckdose 2021-01-28 18:40:00 UptimeSec 71731
+setstate WLANSteckdose 2021-01-27 22:44:38 Version 8.1.0.2(tasmota)
+setstate WLANSteckdose 2021-01-27 22:44:38 WebServerMode Admin
+setstate WLANSteckdose 2021-01-28 18:40:00 Wifi_AP 1
+setstate WLANSteckdose 2021-01-28 18:40:00 Wifi_BSSId F0:B0:14:73:84:50
+setstate WLANSteckdose 2021-01-28 18:40:00 Wifi_Channel 4
+setstate WLANSteckdose 2021-01-28 18:40:00 Wifi_Downtime 0T00:00:06
+setstate WLANSteckdose 2021-01-28 18:40:00 Wifi_LinkCount 1
+setstate WLANSteckdose 2021-01-28 18:40:00 Wifi_RSSI 74
+setstate WLANSteckdose 2021-01-28 18:40:00 Wifi_SSId FRITZ!Box 7490_2,4
+setstate WLANSteckdose 2021-01-28 18:40:00 Wifi_Signal -63
+setstate WLANSteckdose 2021-01-28 18:43:43 state on
+setstate WLANSteckdose 2021-01-28 18:16:53 subscriptions cmnd/DVES_E7EED0_fb/# cmnd/tasmota/# cmnd/tasmotas/#
+setstate WLANSteckdose_ANWS deactivated
+setstate WLANSteckdose_ANWS 2021-01-28 18:43:53 mode deactivated
+setstate WLANSteckdose_ANWS 2021-01-28 18:43:53 state deactivated
+setstate WLANSteckdose_AUTO_OFF disabled
+setstate WLANSteckdose_AUTO_OFF 2021-01-28 18:43:53 state disabled
+setstate WLANSteckdose_AUTO_ON disabled
+setstate WLANSteckdose_AUTO_ON 2021-01-28 18:43:53 state disabled
+setstate WLANSteckdose_MIX_OFF disabled
+setstate WLANSteckdose_MIX_OFF 2021-01-28 18:43:53 state disabled
+setstate WLANSteckdose_SUNR_OFF disabled
+setstate WLANSteckdose_SUNR_OFF 2021-01-28 18:43:53 state disabled
+setstate WLANSteckdose_SUNS_ON disabled
+setstate WLANSteckdose_SUNS_ON 2021-01-28 18:43:53 state disabled
+setstate Zisterne distance
+setstate Zisterne 2021-01-28 13:23:13 distance 34.9680900574
+setstate Zisterne 2021-01-26 17:27:34 state distance
+setstate Zisterne 2021-01-28 13:23:13 volume 4815.27
+setstate Zisterne 2021-01-26 17:25:42 water_level 
+setstate Zisterne 2021-01-28 13:23:13 waterlvl 136.03
+setstate autocreate active
+setstate automatikBew_garten initialized
+setstate automatikBew_garten 2021-01-28 11:30:04 block_01 executed
+setstate automatikBew_garten 2021-01-17 15:19:33 day_0 1
+setstate automatikBew_garten 2021-01-28 10:32:27 day_0_0 Montag
+setstate automatikBew_garten 2021-01-28 10:32:32 day_0_1 Donnerstag
+setstate automatikBew_garten 2021-01-16 18:20:00 day_1 6
+setstate automatikBew_garten 2021-01-12 09:15:02 day_2 4
+setstate automatikBew_garten 2021-01-28 10:34:55 duration_0 10
+setstate automatikBew_garten 2021-01-28 10:32:27 e_automatikBew_garten_day_0_0 Montag
+setstate automatikBew_garten 2021-01-28 10:32:32 e_automatikBew_garten_day_0_1 Donnerstag
+setstate automatikBew_garten 2021-01-28 10:34:55 e_automatikBew_garten_duration_0 10
+setstate automatikBew_garten 2021-01-28 11:29:54 e_automatikBew_garten_rain_amount_0_0 5
+setstate automatikBew_garten 2021-01-28 11:29:56 e_automatikBew_garten_rain_amount_0_1 1
+setstate automatikBew_garten 2021-01-28 10:33:09 e_automatikBew_garten_rain_interval_0_0 72
+setstate automatikBew_garten 2021-01-28 10:33:15 e_automatikBew_garten_rain_interval_0_1 24
+setstate automatikBew_garten 2021-01-28 11:17:17 e_automatikBew_garten_start_button on
+setstate automatikBew_garten 2021-01-28 11:29:57 e_automatikBew_garten_temp_avg_0 9
+setstate automatikBew_garten 2021-01-28 11:30:00 e_automatikBew_garten_temp_cur_0_0 13
+setstate automatikBew_garten 2021-01-28 10:34:03 e_automatikBew_garten_temp_cur_0_1 28
+setstate automatikBew_garten 2021-01-28 10:33:32 e_automatikBew_garten_temp_interval_0 72
+setstate automatikBew_garten 2021-01-28 11:30:04 e_automatikBew_garten_wind_gust_0 6
+setstate automatikBew_garten 2021-01-28 11:30:02 e_automatikBew_garten_wind_standard_0 4
+setstate automatikBew_garten 2021-01-28 10:24:57 mode enabled
+setstate automatikBew_garten 2021-01-28 11:29:54 rain_amount_0_0 5
+setstate automatikBew_garten 2021-01-28 11:29:56 rain_amount_0_1 1
+setstate automatikBew_garten 2021-01-16 19:28:06 rain_amount_1_0 3
+setstate automatikBew_garten 2021-01-16 19:28:14 rain_amount_1_1 5
+setstate automatikBew_garten 2021-01-28 10:33:09 rain_interval_0_0 72
+setstate automatikBew_garten 2021-01-28 10:33:15 rain_interval_0_1 24
+setstate automatikBew_garten 2021-01-16 16:15:43 rain_interval_1_0 1
+setstate automatikBew_garten 2021-01-16 16:15:46 rain_interval_1_1 1
+setstate automatikBew_garten 2021-01-28 11:17:17 start_button on
+setstate automatikBew_garten 2021-01-28 11:30:26 start_time 21:00
+setstate automatikBew_garten 2021-01-28 10:24:57 state initialized
+setstate automatikBew_garten 2021-01-28 11:29:57 temp_avg_0 9
+setstate automatikBew_garten 2021-01-16 19:28:46 temp_avg_1 24
+setstate automatikBew_garten 2021-01-16 19:32:18 temp_cur_0 -3
+setstate automatikBew_garten 2021-01-28 11:30:00 temp_cur_0_0 13
+setstate automatikBew_garten 2021-01-28 10:34:03 temp_cur_0_1 28
+setstate automatikBew_garten 2021-01-13 09:39:16 temp_cur_1 13
+setstate automatikBew_garten 2021-01-28 10:33:32 temp_interval_0 72
+setstate automatikBew_garten 2021-01-15 14:49:54 temp_interval_1 105
+setstate automatikBew_garten 2021-01-28 18:15:54 timer_01_c01 28.01.2021 21:00:00
+setstate automatikBew_garten 2021-01-28 11:30:04 warning condition c01: Argument "Donnerstag" isn't numeric in numeric eq (==)\
+
+setstate automatikBew_garten 2021-01-28 11:30:04 wind_gust_0 6
+setstate automatikBew_garten 2021-01-13 09:40:33 wind_gust_1 6
+setstate automatikBew_garten 2021-01-28 11:30:02 wind_standard_0 4
+setstate automatikBew_garten 2021-01-13 09:39:55 wind_standard_1 4
+setstate automatikBew_wiese initialized
+setstate automatikBew_wiese 2021-01-28 11:30:17 block_01 executed
+setstate automatikBew_wiese 2021-01-25 23:20:54 day_1_0 Montag
+setstate automatikBew_wiese 2021-01-28 09:40:11 day_1_1 Donnerstag
+setstate automatikBew_wiese 2021-01-28 10:34:59 duration_1 10
+setstate automatikBew_wiese 2021-01-28 10:34:59 e_automatikBew_wiese_duration_1 10
+setstate automatikBew_wiese 2021-01-28 11:30:08 e_automatikBew_wiese_rain_amount_1_0 5
+setstate automatikBew_wiese 2021-01-28 11:30:10 e_automatikBew_wiese_rain_amount_1_1 1
+setstate automatikBew_wiese 2021-01-28 10:34:22 e_automatikBew_wiese_rain_interval_1_0 72
+setstate automatikBew_wiese 2021-01-28 10:34:26 e_automatikBew_wiese_rain_interval_1_1 24
+setstate automatikBew_wiese 2021-01-28 11:17:16 e_automatikBew_wiese_start_button on
+setstate automatikBew_wiese 2021-01-28 11:30:11 e_automatikBew_wiese_temp_avg_1 9
+setstate automatikBew_wiese 2021-01-28 11:30:13 e_automatikBew_wiese_temp_cur_1_0 13
+setstate automatikBew_wiese 2021-01-28 10:34:42 e_automatikBew_wiese_temp_cur_1_1 28
+setstate automatikBew_wiese 2021-01-28 10:34:32 e_automatikBew_wiese_temp_interval_1 72
+setstate automatikBew_wiese 2021-01-28 11:30:17 e_automatikBew_wiese_wind_gust_1 6
+setstate automatikBew_wiese 2021-01-28 11:30:15 e_automatikBew_wiese_wind_standard_1 4
+setstate automatikBew_wiese 2021-01-28 10:25:33 mode enabled
+setstate automatikBew_wiese 2021-01-28 11:30:08 rain_amount_1_0 5
+setstate automatikBew_wiese 2021-01-28 11:30:10 rain_amount_1_1 1
+setstate automatikBew_wiese 2021-01-28 10:34:22 rain_interval_1_0 72
+setstate automatikBew_wiese 2021-01-28 10:34:26 rain_interval_1_1 24
+setstate automatikBew_wiese 2021-01-28 11:17:16 start_button on
+setstate automatikBew_wiese 2021-01-28 11:30:32 start_time 21:00
+setstate automatikBew_wiese 2021-01-28 10:25:33 state initialized
+setstate automatikBew_wiese 2021-01-28 11:30:11 temp_avg_1 9
+setstate automatikBew_wiese 2021-01-28 11:30:13 temp_cur_1_0 13
+setstate automatikBew_wiese 2021-01-28 10:34:42 temp_cur_1_1 28
+setstate automatikBew_wiese 2021-01-28 10:34:32 temp_interval_1 72
+setstate automatikBew_wiese 2021-01-28 18:15:54 timer_01_c01 28.01.2021 21:00:00
+setstate automatikBew_wiese 2021-01-28 11:30:17 warning condition c01: Argument "Donnerstag" isn't numeric in numeric eq (==)\
+
+setstate automatikBew_wiese 2021-01-28 11:30:17 wind_gust_1 6
+setstate automatikBew_wiese 2021-01-28 11:30:15 wind_standard_1 4
+setstate betriebszeit_aktualisieren Next: 00:05:00
+setstate betriebszeit_aktualisieren 2021-01-28 18:15:54 state Next: 00:05:00
+setstate d_betriebsmodus_funk MANUELL
+setstate d_betriebsmodus_funk 2021-01-28 18:33:36 state MANUELL
+setstate d_betriebsmodus_wlan MANUELL
+setstate d_betriebsmodus_wlan 2021-01-28 18:43:53 state MANUELL
+setstate d_zeit_funk_off AUS: Manueller Betrieb
+setstate d_zeit_funk_off 2021-01-28 18:33:36 state AUS: Manueller Betrieb
+setstate d_zeit_funk_on AN: Manueller Betrieb
+setstate d_zeit_funk_on 2021-01-28 18:33:36 state AN: Manueller Betrieb
+setstate d_zeit_wlan_off AUS: Manueller Betrieb
+setstate d_zeit_wlan_off 2021-01-28 18:43:53 state AUS: Manueller Betrieb
+setstate d_zeit_wlan_on AN: Manueller Betrieb
+setstate d_zeit_wlan_on 2021-01-28 18:43:53 state AN: Manueller Betrieb
+setstate eventTypes active
+setstate global no definition
+setstate halbautomatikBew_garten initialized
+setstate halbautomatikBew_garten 2021-01-28 11:29:29 block_01 executed
+setstate halbautomatikBew_garten 2021-01-28 10:35:55 current_time_garten 21:00
+setstate halbautomatikBew_garten 2021-01-28 11:29:29 duration_0 10
+setstate halbautomatikBew_garten 2021-01-28 11:29:29 e_halbautomatikBew_garten_duration_0 10
+setstate halbautomatikBew_garten 2021-01-28 11:29:00 e_halbautomatikBew_garten_start_button off
+setstate halbautomatikBew_garten 2021-01-28 11:16:34 mode enabled
+setstate halbautomatikBew_garten 2021-01-28 11:29:00 start_button off
+setstate halbautomatikBew_garten 2021-01-28 11:30:38 start_time_0 21:00
+setstate halbautomatikBew_garten 2021-01-28 11:16:34 state initialized
+setstate halbautomatikBew_garten 2021-01-28 18:15:54 timer_01_c01 28.01.2021 21:00:00
+setstate halbautomatikBew_wiese initialized
+setstate halbautomatikBew_wiese 2021-01-28 11:29:31 block_01 executed
+setstate halbautomatikBew_wiese 2021-01-28 10:36:02 current_time_garten 21:00
+setstate halbautomatikBew_wiese 2021-01-28 11:29:31 duration_1 10
+setstate halbautomatikBew_wiese 2021-01-28 11:29:31 e_halbautomatikBew_wiese_duration_1 10
+setstate halbautomatikBew_wiese 2021-01-28 11:29:00 e_halbautomatikBew_wiese_start_button off
+setstate halbautomatikBew_wiese 2021-01-28 11:19:31 mode enabled
+setstate halbautomatikBew_wiese 2021-01-28 11:29:00 start_button off
+setstate halbautomatikBew_wiese 2021-01-28 11:30:43 start_time_1 21:00
+setstate halbautomatikBew_wiese 2021-01-28 11:19:31 state initialized
+setstate halbautomatikBew_wiese 2021-01-28 18:15:54 timer_01_c01 28.01.2021 21:00:00
+setstate handy_luca present
+setstate handy_luca 2021-01-28 18:44:32 .absenceThresholdCounter 0
+setstate handy_luca 2021-01-28 18:44:32 .presenceThresholdCounter 0
+setstate handy_luca 2021-01-28 18:15:53 model lan-ping
+setstate handy_luca 2021-01-28 18:44:32 presence present
+setstate handy_luca 2021-01-28 18:44:32 state present
+setstate initialUsbCheck 2021-01-28 18:15:54
+setstate initialUsbCheck 2021-01-28 18:15:48 state active
+setstate lapi_luca absent
+setstate lapi_luca 2021-01-28 18:43:44 .absenceThresholdCounter 0
+setstate lapi_luca 2021-01-28 18:43:44 .presenceThresholdCounter 0
+setstate lapi_luca 2021-01-28 18:15:53 model lan-ping
+setstate lapi_luca 2021-01-28 18:43:44 presence absent
+setstate lapi_luca 2021-01-28 18:43:44 state absent
+setstate manuellBew_garten initialized
+setstate manuellBew_garten 2021-01-28 13:47:46 block_01 executed
+setstate manuellBew_garten 2021-01-28 13:23:22 duration_0 10
+setstate manuellBew_garten 2021-01-28 13:23:22 e_manuellBew_garten_duration_0 10
+setstate manuellBew_garten 2021-01-28 13:47:46 e_manuellBew_garten_start_button off
+setstate manuellBew_garten 2021-01-28 11:07:06 mode enabled
+setstate manuellBew_garten 2021-01-28 13:47:46 start_button off
+setstate manuellBew_garten 2021-01-28 11:07:06 state initialized
+setstate manuellBew_wiese initialized
+setstate manuellBew_wiese 2021-01-28 11:32:17 block_01 executed
+setstate manuellBew_wiese 2021-01-28 11:29:23 duration_1 10
+setstate manuellBew_wiese 2021-01-28 11:29:23 e_manuellBew_wiese_duration_1 10
+setstate manuellBew_wiese 2021-01-28 11:32:17 e_manuellBew_wiese_start_button off
+setstate manuellBew_wiese 2021-01-28 11:06:53 mode enabled
+setstate manuellBew_wiese 2021-01-28 11:32:17 start_button off
+setstate manuellBew_wiese 2021-01-28 11:06:53 state initialized
+setstate mqtt2_server 2021-01-28 18:16:03 RETAIN {"tele/tasmota/LWT":"Online"}
+setstate mqtt2_server 2021-01-28 18:16:02 nrclients 1
+setstate mqtt2_server 2021-01-28 18:15:53 state Initialized
+setstate myShelly OK
+setstate myShelly 2020-12-02 18:50:01 cloud disabled
+setstate myShelly 2021-01-25 10:48:24 config mode=relay [channel s]
+setstate myShelly 2021-01-27 12:04:22 energy_0 44.9
+setstate myShelly 2021-01-25 10:48:36 energy_1 0.9
+setstate myShelly 2021-01-16 15:25:06 firmware v1.9.2(update needed to v1.9.4)
+setstate myShelly 2021-01-28 18:15:48 network <html>connected to <a href="http://192.168.178.101">192.168.178.101</a></html>
+setstate myShelly 2021-01-28 14:01:12 overpower_0 0
+setstate myShelly 2021-01-28 14:01:14 overpower_1 0
+setstate myShelly 2021-01-26 16:55:37 power_0 0
+setstate myShelly 2021-01-25 10:48:36 power_1 0
+setstate myShelly 2020-12-02 18:50:01 relay off
+setstate myShelly 2021-01-28 14:01:12 relay_0 off
+setstate myShelly 2021-01-28 14:01:14 relay_1 off
+setstate myShelly 2021-01-28 18:16:04 state OK
+setstate nanoCUL433 2020-12-18 23:05:25 ccconf freq:3230.376MHz bWidth:58KHz rAmpl:24dB sens:4dB
+setstate nanoCUL433 2021-01-28 18:15:52 cmds  A B C E e F f G h i K k l M m R T t U V W X x Y Z z
+setstate nanoCUL433 2021-01-28 18:33:38 raw is0FFFF0FF0FF0
+setstate nanoCUL433 2021-01-28 18:15:52 state Initialized
+setstate nanoCUL433 2020-12-18 22:48:34 version V 1.67 nanoCUL433
+setstate notify_aktie_change inactive
+setstate notify_aktie_change 2021-01-28 18:15:54 state inactive
+setstate regensensor_aussen Rainmenge: 879,5 mm
+setstate regensensor_aussen 2021-01-28 18:09:48 rainamount 879,5
+setstate regensensor_aussen 2021-01-28 18:16:05 reading01User 879.5
+setstate rollerTimer cmd_3
+setstate rollerTimer 2021-01-26 11:32:51 T_Aktiv off
+setstate rollerTimer 2021-01-28 10:26:29 T_Reset on
+setstate rollerTimer 2021-01-28 10:26:29 T_WochenendeA 20:00
+setstate rollerTimer 2021-01-28 10:26:29 T_WochenendeM 06:00
+setstate rollerTimer 2021-01-28 10:26:29 T_WochentagA 20:00
+setstate rollerTimer 2021-01-28 10:26:29 T_WochentagM 06:00
+setstate rollerTimer 2021-01-28 10:26:29 cmd 3
+setstate rollerTimer 2021-01-28 10:26:29 cmd_event rollerTimer
+setstate rollerTimer 2021-01-28 10:26:29 cmd_nr 3
+setstate rollerTimer 2021-01-26 17:18:31 mode enabled
+setstate rollerTimer 2021-01-28 10:26:29 state cmd_3
+setstate rollerTimer 2021-01-28 18:16:02 timer_01_c01 29.01.2021 06:00:00|12345
+setstate rollerTimer 2021-01-28 18:16:02 timer_02_c01 29.01.2021 06:00:00|60
+setstate rollerTimer 2021-01-28 18:16:02 timer_03_c02 28.01.2021 20:00:00|12345
+setstate rollerTimer 2021-01-28 18:16:02 timer_04_c02 28.01.2021 20:00:00|60
+setstate rs_TempDummy 2021-01-26 17:16:31 temp 32
+setstate rs_beschattung cmd_3
+setstate rs_beschattung 2021-01-26 17:16:31 Device rs_TempDummy
+setstate rs_beschattung 2021-01-27 07:24:17 cmd 3
+setstate rs_beschattung 2021-01-27 07:24:17 cmd_event timer_5
+setstate rs_beschattung 2021-01-27 07:24:17 cmd_nr 3
+setstate rs_beschattung 2021-01-28 18:16:02 delay 60
+setstate rs_beschattung 2021-01-26 17:16:31 e_rs_TempDummy_temp 32
+setstate rs_beschattung 2021-01-26 17:16:07 mode enabled
+setstate rs_beschattung 2021-01-28 18:16:02 pct 20
+setstate rs_beschattung 2021-01-18 11:53:51 rs_Aktiv on
+setstate rs_beschattung 2021-01-25 17:27:39 rs_delay 1
+setstate rs_beschattung 2021-01-26 16:08:38 rs_pct 80
+setstate rs_beschattung 2021-01-26 17:16:05 rs_temperature 26
+setstate rs_beschattung 2021-01-27 07:24:17 state cmd_3
+setstate rs_beschattung 2021-01-28 18:16:02 tempHoch 24
+setstate rs_beschattung 2021-01-28 18:16:02 timer_01_c01 29.01.2021 17:48:58
+setstate rs_beschattung 2021-01-28 18:16:02 timer_02_c01 29.01.2021 07:22:05
+setstate rs_beschattung 2021-01-28 18:16:02 timer_03_c02 29.01.2021 17:48:58
+setstate rs_beschattung 2021-01-28 18:16:02 timer_04_c02 29.01.2021 07:22:05
+setstate rs_beschattung 2021-01-28 18:16:02 timer_05_c03 29.01.2021 07:22:05
+setstate rs_sensorHTTP Temperatur: 11,0 °C
+setstate rs_sensorHTTP 2021-01-16 14:44:50 Durchschnittstemperatur 0.6
+setstate rs_sensorHTTP 2021-01-28 18:36:04 reading01User 11.0
+setstate rs_sensorHTTP 2021-01-28 18:36:04 temperature 11,0
+setstate rs_shelly initialized
+setstate rs_shelly 2020-12-18 10:54:08 cloud disabled
+setstate rs_shelly 2020-12-29 16:32:38 config mode=roller [channel s]
+setstate rs_shelly 2021-01-26 21:39:28 energy_0 44.8
+setstate rs_shelly 2021-01-16 15:21:06 firmware v1.9.2(update needed to v1.9.4)
+setstate rs_shelly 2021-01-26 21:39:13 last_dir down
+setstate rs_shelly 2021-01-28 18:15:48 network <html>connected to <a href="http://192.168.178.101">192.168.178.101</a></html>
+setstate rs_shelly 2021-01-26 21:39:31 pct 0
+setstate rs_shelly 2021-01-26 21:39:31 position closed
+setstate rs_shelly 2021-01-26 16:55:30 power 0
+setstate rs_shelly 2021-01-26 21:39:28 power_0 0
+setstate rs_shelly 2021-01-28 18:15:48 state initialized
+setstate rs_shelly 2020-12-18 10:54:08 stop_reason normal
+setstate telebot Static
+setstate telebot 2021-01-26 17:15:36 Contacts 1082165172:Chris_McQueen:@smart_lightning -454495550::#SmartWifi_FHEM 1551107375:Angela:@Angela_WWI2018A 1497305498:Steffen:@Pinte11 1302585604:Luca:@yqcebtmu0192 -592603942::#Rolladensteuerung
+setstate telebot 2021-01-28 16:58:25 PollingErrCount 0
+setstate telebot 2021-01-26 17:15:36 msgChat #Rolladensteuerung
+setstate telebot 2021-01-26 17:15:36 msgChatId -592603942
+setstate telebot 2021-01-26 17:15:36 msgFileId 
+setstate telebot 2021-01-26 17:15:36 msgId 1664
+setstate telebot 2021-01-26 17:15:36 msgPeer Steffen
+setstate telebot 2021-01-26 17:15:36 msgPeerId 1497305498
+setstate telebot 2021-01-26 17:15:36 msgReplyMsgId 
+setstate telebot 2021-01-26 17:15:36 msgText Update
+setstate telebot 2021-01-26 17:15:36 prevMsgChat #Rolladensteuerung
+setstate telebot 2021-01-26 17:15:36 prevMsgFileId 
+setstate telebot 2021-01-26 17:15:36 prevMsgId 1663
+setstate telebot 2021-01-26 17:15:36 prevMsgPeer Steffen
+setstate telebot 2021-01-26 17:15:36 prevMsgPeerId 1497305498
+setstate telebot 2021-01-26 17:15:36 prevMsgReplyMsgId 
+setstate telebot 2021-01-26 17:15:36 prevMsgText /start
+setstate telebot 2021-01-28 18:20:22 sentMsgId 2201
+setstate telebot 2021-01-28 18:20:22 sentMsgPeerId 1551107375
+setstate telebot 2021-01-28 18:20:22 sentMsgResult SUCCESS
+setstate telnetPort 2021-01-28 18:15:53 state Initialized
+setstate test pct 33
+setstate test 2021-01-26 21:38:55 state pct 33
+setstate windsensor_aussen Windgeschwindigkeit: 17,3 km/h\
+Windböe: 41,4 km/h
+setstate windsensor_aussen 2021-01-28 18:41:03 gust 41,4
+setstate windsensor_aussen 2021-01-28 18:41:03 windspeed 17,3

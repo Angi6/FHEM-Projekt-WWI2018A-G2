@@ -1,0 +1,9 @@
+#Mon Nov 30 13:33:39 2020
+setstate Logfile active
+setstate WEB 2020-11-30 13:03:03 state Initialized
+setstate WEBphone 2020-11-30 13:03:04 state Initialized
+setstate autocreate active
+setstate eventTypes active
+setstate global no definition
+setstate initialUsbCheck 2020-11-30 13:03:04
+setstate initialUsbCheck 2020-11-30 13:03:04 state active
