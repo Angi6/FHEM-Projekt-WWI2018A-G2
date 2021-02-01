@@ -158,11 +158,17 @@ sub create_Logfile($$$$){
 	
 }
 
-#Löscht das Aktiengrät
+#Löscht das Aktiengerät
 sub deleteStock($){
 	my ($deviceName) = @_;
+	
+	#läscht das Aktiengerät
 	fhem("delete $deviceName");
+	
+	#leert die zugehörige Logdatei
 	fhem("set FileLog_$deviceName clear");
+	
+	#löscht den FileLog
 	fhem("delete FileLog_$deviceName");
 	
 	return undef;
@@ -331,18 +337,23 @@ sub sendNotification($){
 	
 }
 
-#löscht die Attribute
+#löscht die Attribute einer Aktie, die für die Benachrichtigungen benötigt werden
 sub deleteNotify($){
 	my ($deviceName) = @_;
 	
+	#löscht das Attribut ChangePercent
 	fhem("deleteattr $deviceName ChangePercent");
+	
+	#löscht das Attribut ChangeTime
 	fhem("deleteattr $deviceName ChangeTime");
+	
+	#löscht das Attribut Contacts
 	fhem("deleteattr $deviceName Contacts");
 	
 	return undef;
 }
 
-#Ermittelt alle Logeinträge der jeweiligen Aktie
+#Ermittelt alle Logeinträge der jeweiligen Aktie ab einem ausgewählten Zeitraum
 sub getLogs($$){
 	my ($deviceName, $datetime) = @_;
 	my $logs = fhem("get FileLog_$deviceName - - $datetime 2030-10-01_16:00:00");
