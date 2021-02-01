@@ -28270,3 +28270,47 @@
 			Werteveränderung:  gestiegen
  : FAILED peer not found :NotFound:
 2021.02.01 16:14:28 3: 854075: Read callback: Error: read from https://www.finanzen.net:443 timed out
+2021.02.01 16:19:09 3: get FileLog_A0HGDX - - 2021-02-01_04:16:15 2021-02-01_04:26:15 : 2021-02-01_04:26:14 A0HGDX Price: 273,00
+
+2021.02.01 16:19:53 3: get FileLog_906866 - - 2021-02-01_16:16:11 2021-02-01_16:26:11 : 2021-02-01_16:16:11 906866 Price: 2.720,50
+
+2021.02.01 16:19:53 3: TelegramBot_SendIt telebot: Failed with :FAILED peer not found :NotFound::
+2021.02.01 16:19:53 3: TelegramBot_Callback telebot: resulted in NonBlockingGet: returned FAILED peer not found :NotFound: from SendIt
+2021.02.01 16:19:53 3: set telebot msg @NotFound Werteveränderung für die Amazon Aktie (906866):
+
+			Ausgewähltes Zeitintervall: NotFound Stunden
+
+			Aktueller Kurs: 2720.50€
+
+			Vorheriger Kurs:  2720.50€
+
+			Werteveränderung:  gestiegen
+ : FAILED peer not found :NotFound:
+2021.02.01 16:20:12 3: get FileLog_906866 - - 2021-02-01_16:16:11 2021-02-01_16:26:11 : 2021-02-01_16:16:11 906866 Price: 2.720,50
+
+2021.02.01 16:20:12 3: TelegramBot_SendIt telebot: Failed with :FAILED peer not found :NotFound::
+2021.02.01 16:20:12 3: TelegramBot_Callback telebot: resulted in NonBlockingGet: returned FAILED peer not found :NotFound: from SendIt
+2021.02.01 16:20:12 3: set telebot msg @NotFound Werteveränderung für die Amazon Aktie (906866):
+
+			Ausgewähltes Zeitintervall: NotFound Stunden
+
+			Aktueller Kurs: 2720.50€
+
+			Vorheriger Kurs:  2720.50€
+
+			Werteveränderung:  gestiegen
+ : FAILED peer not found :NotFound:
+2021.02.01 16:20:23 3: get FileLog_906866 - - 2021-02-01_16:16:11 2021-02-01_16:26:11 : 2021-02-01_16:16:11 906866 Price: 2.720,50
+
+2021.02.01 16:20:23 3: TelegramBot_SendIt telebot: Failed with :FAILED peer not found :NotFound::
+2021.02.01 16:20:23 3: TelegramBot_Callback telebot: resulted in NonBlockingGet: returned FAILED peer not found :NotFound: from SendIt
+2021.02.01 16:20:23 3: set telebot msg @NotFound Werteveränderung für die Amazon Aktie (906866):
+
+			Ausgewähltes Zeitintervall: NotFound Stunden
+
+			Aktueller Kurs: 2720.50€
+
+			Vorheriger Kurs:  2720.50€
+
+			Werteveränderung:  gestiegen
+ : FAILED peer not found :NotFound:
